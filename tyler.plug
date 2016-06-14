@@ -1,0 +1,9 @@
+[Core]
+Name = Tyler
+Module = tyler
+
+[Documentation]
+Description = The Tyler plugin, super duper
+
+[Python]
+Version = 2+

@@ -1,5 +1,6 @@
 from errbot import BotPlugin, botcmd
 import requests
+import json
 
 class Tyler(BotPlugin):
     """

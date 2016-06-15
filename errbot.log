@@ -1,0 +1,1065 @@
+2016-06-14 20:28:39,860 INFO     errbot.specific_plugin_manager storage search paths {'/usr/local/lib/python3.5/site-packages/errbot/storage'}
+2016-06-14 20:28:39,869 INFO     errbot.specific_plugin_manager Found those plugings available:
+2016-06-14 20:28:39,869 INFO     errbot.specific_plugin_manager 	    Memory  (/usr/local/lib/python3.5/site-packages/errbot/storage/memory.py)
+2016-06-14 20:28:39,870 INFO     errbot.specific_plugin_manager 	     Shelf  (/usr/local/lib/python3.5/site-packages/errbot/storage/shelf.py)
+2016-06-14 20:28:39,870 INFO     errbot.bootstrap          Found Storage plugin: 'Shelf'
+Description: This is the storage plugin for the traditional shelf store for errbot.
+2016-06-14 20:28:39,871 DEBUG    errbot.specific_plugin_manager Refilter the plugins...
+2016-06-14 20:28:39,872 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/storage/memory.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:28:39,874 DEBUG    errbot.specific_plugin_manager Load the one remaining...
+2016-06-14 20:28:39,889 DEBUG    errbot.specific_plugin_manager Class to load ShelfStoragePlugin
+2016-06-14 20:28:39,890 DEBUG    errbot.storage            Opening storage 'repomgr'
+2016-06-14 20:28:39,891 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/repomgr.db
+2016-06-14 20:28:39,926 DEBUG    errbot.storage            Opening storage 'core'
+2016-06-14 20:28:39,926 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/core.db
+2016-06-14 20:28:39,933 INFO     errbot.specific_plugin_manager backends search paths {'/usr/local/lib/python3.5/site-packages/errbot/backends'}
+2016-06-14 20:28:39,969 INFO     errbot.specific_plugin_manager Found those plugings available:
+2016-06-14 20:28:39,969 INFO     errbot.specific_plugin_manager 	   Graphic  (/usr/local/lib/python3.5/site-packages/errbot/backends/graphic.py)
+2016-06-14 20:28:39,970 INFO     errbot.specific_plugin_manager 	   Hipchat  (/usr/local/lib/python3.5/site-packages/errbot/backends/hipchat.py)
+2016-06-14 20:28:39,970 INFO     errbot.specific_plugin_manager 	       IRC  (/usr/local/lib/python3.5/site-packages/errbot/backends/irc.py)
+2016-06-14 20:28:39,970 INFO     errbot.specific_plugin_manager 	      Null  (/usr/local/lib/python3.5/site-packages/errbot/backends/null.py)
+2016-06-14 20:28:39,970 INFO     errbot.specific_plugin_manager 	     Slack  (/usr/local/lib/python3.5/site-packages/errbot/backends/slack.py)
+2016-06-14 20:28:39,970 INFO     errbot.specific_plugin_manager 	  Telegram  (/usr/local/lib/python3.5/site-packages/errbot/backends/telegram_messenger.py)
+2016-06-14 20:28:39,971 INFO     errbot.specific_plugin_manager 	      Test  (/usr/local/lib/python3.5/site-packages/errbot/backends/test.py)
+2016-06-14 20:28:39,981 INFO     errbot.specific_plugin_manager 	      Text  (/usr/local/lib/python3.5/site-packages/errbot/backends/text.py)
+2016-06-14 20:28:39,981 INFO     errbot.specific_plugin_manager 	      XMPP  (/usr/local/lib/python3.5/site-packages/errbot/backends/xmpp.py)
+2016-06-14 20:28:39,981 INFO     errbot.bootstrap          Found Backend plugin: 'Slack'
+						Description: This is the slack backend for Err.
+2016-06-14 20:28:39,982 DEBUG    errbot.specific_plugin_manager Refilter the plugins...
+2016-06-14 20:28:39,982 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/graphic.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:28:39,983 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/hipchat.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:28:39,984 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/irc.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:28:39,984 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/null.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:28:39,986 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/telegram_messenger.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:28:39,986 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/test.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:28:39,987 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/text.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:28:39,987 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/xmpp.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:28:39,988 DEBUG    errbot.specific_plugin_manager Load the one remaining...
+2016-06-14 20:28:40,303 ERROR    errbot.backends.slack     Could not start the Slack back-end
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/errbot/backends/slack.py", line 25, in <module>
+    from slackclient import SlackClient
+ImportError: No module named 'slackclient'
+2016-06-14 20:28:40,313 CRITICAL errbot.backends.slack     You need to install the slackclient package in order to use the Slack back-end. You should be able to install this package using: pip install slackclient
+2016-06-14 20:29:28,366 INFO     errbot.specific_plugin_manager storage search paths {'/usr/local/lib/python3.5/site-packages/errbot/storage'}
+2016-06-14 20:29:28,373 INFO     errbot.specific_plugin_manager Found those plugings available:
+2016-06-14 20:29:28,373 INFO     errbot.specific_plugin_manager 	    Memory  (/usr/local/lib/python3.5/site-packages/errbot/storage/memory.py)
+2016-06-14 20:29:28,374 INFO     errbot.specific_plugin_manager 	     Shelf  (/usr/local/lib/python3.5/site-packages/errbot/storage/shelf.py)
+2016-06-14 20:29:28,374 INFO     errbot.bootstrap          Found Storage plugin: 'Shelf'
+Description: This is the storage plugin for the traditional shelf store for errbot.
+2016-06-14 20:29:28,375 DEBUG    errbot.specific_plugin_manager Refilter the plugins...
+2016-06-14 20:29:28,376 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/storage/memory.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:29:28,378 DEBUG    errbot.specific_plugin_manager Load the one remaining...
+2016-06-14 20:29:28,386 DEBUG    errbot.specific_plugin_manager Class to load ShelfStoragePlugin
+2016-06-14 20:29:28,387 DEBUG    errbot.storage            Opening storage 'repomgr'
+2016-06-14 20:29:28,387 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/repomgr.db
+2016-06-14 20:29:28,406 DEBUG    errbot.storage            Opening storage 'core'
+2016-06-14 20:29:28,406 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/core.db
+2016-06-14 20:29:28,409 INFO     errbot.specific_plugin_manager backends search paths {'/usr/local/lib/python3.5/site-packages/errbot/backends'}
+2016-06-14 20:29:28,417 INFO     errbot.specific_plugin_manager Found those plugings available:
+2016-06-14 20:29:28,417 INFO     errbot.specific_plugin_manager 	   Graphic  (/usr/local/lib/python3.5/site-packages/errbot/backends/graphic.py)
+2016-06-14 20:29:28,418 INFO     errbot.specific_plugin_manager 	   Hipchat  (/usr/local/lib/python3.5/site-packages/errbot/backends/hipchat.py)
+2016-06-14 20:29:28,418 INFO     errbot.specific_plugin_manager 	       IRC  (/usr/local/lib/python3.5/site-packages/errbot/backends/irc.py)
+2016-06-14 20:29:28,418 INFO     errbot.specific_plugin_manager 	      Null  (/usr/local/lib/python3.5/site-packages/errbot/backends/null.py)
+2016-06-14 20:29:28,418 INFO     errbot.specific_plugin_manager 	     Slack  (/usr/local/lib/python3.5/site-packages/errbot/backends/slack.py)
+2016-06-14 20:29:28,422 INFO     errbot.specific_plugin_manager 	  Telegram  (/usr/local/lib/python3.5/site-packages/errbot/backends/telegram_messenger.py)
+2016-06-14 20:29:28,422 INFO     errbot.specific_plugin_manager 	      Test  (/usr/local/lib/python3.5/site-packages/errbot/backends/test.py)
+2016-06-14 20:29:28,422 INFO     errbot.specific_plugin_manager 	      Text  (/usr/local/lib/python3.5/site-packages/errbot/backends/text.py)
+2016-06-14 20:29:28,422 INFO     errbot.specific_plugin_manager 	      XMPP  (/usr/local/lib/python3.5/site-packages/errbot/backends/xmpp.py)
+2016-06-14 20:29:28,423 INFO     errbot.bootstrap          Found Backend plugin: 'Slack'
+						Description: This is the slack backend for Err.
+2016-06-14 20:29:28,423 DEBUG    errbot.specific_plugin_manager Refilter the plugins...
+2016-06-14 20:29:28,424 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/graphic.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:29:28,424 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/hipchat.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:29:28,425 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/irc.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:29:28,426 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/null.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:29:28,430 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/telegram_messenger.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:29:28,432 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/test.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:29:28,433 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/text.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:29:28,433 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/xmpp.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:29:28,433 DEBUG    errbot.specific_plugin_manager Load the one remaining...
+2016-06-14 20:29:28,859 DEBUG    errbot.specific_plugin_manager Class to load SlackBackend
+2016-06-14 20:29:28,860 DEBUG    errbot.core               ErrBot init.
+2016-06-14 20:29:28,860 DEBUG    errbot.backends.base      Backend init.
+2016-06-14 20:29:28,861 DEBUG    errbot.core               created the thread pool<threadpool.ThreadPool object at 0x10f5a53c8>
+2016-06-14 20:29:28,877 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.smart_strong".
+2016-06-14 20:29:28,878 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+2016-06-14 20:29:28,878 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.fenced_code".
+2016-06-14 20:29:28,878 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2016-06-14 20:29:28,882 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.footnotes".
+2016-06-14 20:29:28,883 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2016-06-14 20:29:28,892 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.attr_list".
+2016-06-14 20:29:28,893 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2016-06-14 20:29:28,896 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.def_list".
+2016-06-14 20:29:28,896 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2016-06-14 20:29:28,899 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.tables".
+2016-06-14 20:29:28,899 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2016-06-14 20:29:28,903 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.abbr".
+2016-06-14 20:29:28,903 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2016-06-14 20:29:28,903 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2016-06-14 20:29:28,904 DEBUG    MARKDOWN                  Successfully loaded extension "errbot.rendering.ansiext.AnsiExtension".
+2016-06-14 20:29:28,904 DEBUG    errbot.core               Initializing backend storage
+2016-06-14 20:29:28,910 DEBUG    errbot.storage            Opening storage 'slack_backend'
+2016-06-14 20:29:28,910 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/slack_backend.db
+2016-06-14 20:29:28,916 DEBUG    errbot.plugin_manager     All plugin roots:
+2016-06-14 20:29:28,917 DEBUG    errbot.plugin_manager     -> /usr/local/lib/python3.5/site-packages/errbot/core_plugins
+2016-06-14 20:29:28,919 DEBUG    errbot.plugin_manager     Add /usr/local/lib/python3.5/site-packages/errbot/core_plugins to sys.path
+2016-06-14 20:29:28,920 DEBUG    errbot.plugin_manager     -> /Users/ryanhartje/source/python/errbot-tyler/plugins/err-example
+2016-06-14 20:29:28,920 DEBUG    errbot.plugin_manager     Add /Users/ryanhartje/source/python/errbot-tyler/plugins/err-example to sys.path
+2016-06-14 20:29:28,920 DEBUG    errbot.plugin_manager     check dependencies of /usr/local/lib/python3.5/site-packages/errbot/core_plugins
+2016-06-14 20:29:28,920 DEBUG    errbot.plugin_manager     /usr/local/lib/python3.5/site-packages/errbot/core_plugins has no requirements.txt file
+2016-06-14 20:29:28,920 DEBUG    errbot.plugin_manager     check dependencies of /Users/ryanhartje/source/python/errbot-tyler/plugins/err-example
+2016-06-14 20:29:28,921 DEBUG    errbot.plugin_manager     /Users/ryanhartje/source/python/errbot-tyler/plugins/err-example has no requirements.txt file
+2016-06-14 20:29:28,975 DEBUG    yapsy_loaded_plugin_ChatRoom_0 LOADING CHATROOM
+2016-06-14 20:29:29,386 INFO     errbot                    webhooks:  Flag to bind /echo to echo
+2016-06-14 20:29:29,394 DEBUG    errbot.bootstrap          Start serving commands from the slack backend
+2016-06-14 20:29:29,394 INFO     errbot.backends.slack     Verifying authentication token
+2016-06-14 20:29:29,555 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:29:30,214 DEBUG    requests.packages.urllib3.connectionpool "POST /api/auth.test HTTP/1.1" 200 None
+2016-06-14 20:29:30,225 DEBUG    errbot.backends.slack     Token accepted
+2016-06-14 20:29:30,226 INFO     errbot.backends.slack     Connecting to Slack real-time-messaging API
+2016-06-14 20:29:30,230 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:29:30,616 DEBUG    requests.packages.urllib3.connectionpool "POST /api/rtm.start HTTP/1.1" 200 None
+2016-06-14 20:29:31,207 INFO     errbot.backends.slack     Connected
+2016-06-14 20:29:32,213 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'hello'}
+2016-06-14 20:29:32,213 INFO     errbot.core               Activate internal commands
+2016-06-14 20:29:32,213 INFO     errbot.plugin_manager     Activate bot plugins...
+2016-06-14 20:29:32,214 INFO     errbot.plugin_manager     Activate plugin: ACLs
+2016-06-14 20:29:32,215 DEBUG    errbot.plugin_manager     Plugin ACLs has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:29:32,215 INFO     errbot.plugin_manager     Activating ACLs with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:29:32,216 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:29:32,216 DEBUG    errbot.botplugin          Init storage for ACLS
+2016-06-14 20:29:32,216 DEBUG    errbot.storage            Opening storage 'ACLS'
+2016-06-14 20:29:32,217 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/ACLS.db
+2016-06-14 20:29:32,221 DEBUG    errbot.core               Adding command filter: acls
+2016-06-14 20:29:32,221 INFO     errbot.core_plugins.wsview Checking ACLS for webhooks
+2016-06-14 20:29:32,223 INFO     errbot.plugin_manager     Activate plugin: Backup
+2016-06-14 20:29:32,223 DEBUG    errbot.plugin_manager     Plugin Backup has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:29:32,224 INFO     errbot.plugin_manager     Activating Backup with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:29:32,224 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:29:32,225 DEBUG    errbot.botplugin          Init storage for Backup
+2016-06-14 20:29:32,225 DEBUG    errbot.storage            Opening storage 'Backup'
+2016-06-14 20:29:32,226 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Backup.db
+2016-06-14 20:29:32,229 DEBUG    errbot.core               Adding command : backup -> backup
+2016-06-14 20:29:32,229 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2016-06-14 20:29:32,230 INFO     errbot.plugin_manager     Activate plugin: ChatRoom
+2016-06-14 20:29:32,231 DEBUG    errbot.plugin_manager     Plugin ChatRoom has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:29:32,231 INFO     errbot.plugin_manager     Activating ChatRoom with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:29:32,231 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:29:32,232 DEBUG    errbot.botplugin          Init storage for ChatRoom
+2016-06-14 20:29:32,232 DEBUG    errbot.storage            Opening storage 'ChatRoom'
+2016-06-14 20:29:32,232 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/ChatRoom.db
+2016-06-14 20:29:32,236 DEBUG    errbot.core               Adding command : room_create -> room_create
+2016-06-14 20:29:32,236 DEBUG    errbot.core               Adding command : room_destroy -> room_destroy
+2016-06-14 20:29:32,236 DEBUG    errbot.core               Adding command : room_invite -> room_invite
+2016-06-14 20:29:32,237 DEBUG    errbot.core               Adding command : room_join -> room_join
+2016-06-14 20:29:32,237 DEBUG    errbot.core               Adding command : room_leave -> room_leave
+2016-06-14 20:29:32,238 DEBUG    errbot.core               Adding command : room_list -> room_list
+2016-06-14 20:29:32,238 DEBUG    errbot.core               Adding command : room_occupants -> room_occupants
+2016-06-14 20:29:32,238 DEBUG    errbot.core               Adding command : room_topic -> room_topic
+2016-06-14 20:29:32,239 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2016-06-14 20:29:32,240 INFO     errbot.plugin_manager     Activate plugin: Flows
+2016-06-14 20:29:32,241 DEBUG    errbot.plugin_manager     Plugin Flows has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:29:32,241 INFO     errbot.plugin_manager     Activating Flows with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:29:32,242 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:29:32,242 DEBUG    errbot.botplugin          Init storage for Flows
+2016-06-14 20:29:32,243 DEBUG    errbot.storage            Opening storage 'Flows'
+2016-06-14 20:29:32,243 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Flows.db
+2016-06-14 20:29:32,246 DEBUG    errbot.core               Adding command : flows_kill -> flows_kill
+2016-06-14 20:29:32,247 DEBUG    errbot.core               Adding command : flows_list -> flows_list
+2016-06-14 20:29:32,247 DEBUG    errbot.core               Adding command : flows_show -> flows_show
+2016-06-14 20:29:32,247 DEBUG    errbot.core               Adding command : flows_start -> flows_start
+2016-06-14 20:29:32,247 DEBUG    errbot.core               Adding command : flows_status -> flows_status
+2016-06-14 20:29:32,248 DEBUG    errbot.core               Adding command : flows_stop -> flows_stop
+2016-06-14 20:29:32,248 INFO     errbot.core_plugins.wsview Checking Flows for webhooks
+2016-06-14 20:29:32,249 INFO     errbot.plugin_manager     Activate plugin: Health
+2016-06-14 20:29:32,249 DEBUG    errbot.plugin_manager     Plugin Health has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:29:32,249 INFO     errbot.plugin_manager     Activating Health with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:29:32,249 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:29:32,263 DEBUG    errbot.botplugin          Init storage for Health
+2016-06-14 20:29:32,264 DEBUG    errbot.storage            Opening storage 'Health'
+2016-06-14 20:29:32,264 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Health.db
+2016-06-14 20:29:32,267 DEBUG    errbot.core               Adding command : restart -> restart
+2016-06-14 20:29:32,268 DEBUG    errbot.core               Adding command : shutdown -> shutdown
+2016-06-14 20:29:32,269 DEBUG    errbot.core               Adding command : status -> status
+2016-06-14 20:29:32,270 DEBUG    errbot.core               Adding command : status_gc -> status_gc
+2016-06-14 20:29:32,270 DEBUG    errbot.core               Adding command : status_load -> status_load
+2016-06-14 20:29:32,270 DEBUG    errbot.core               Adding command : status_plugins -> status_plugins
+2016-06-14 20:29:32,271 DEBUG    errbot.core               Adding command : uptime -> uptime
+2016-06-14 20:29:32,271 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2016-06-14 20:29:32,272 INFO     errbot.plugin_manager     Activate plugin: Help
+2016-06-14 20:29:32,272 DEBUG    errbot.plugin_manager     Plugin Help has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:29:32,272 INFO     errbot.plugin_manager     Activating Help with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:29:32,273 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:29:32,273 DEBUG    errbot.botplugin          Init storage for Help
+2016-06-14 20:29:32,273 DEBUG    errbot.storage            Opening storage 'Help'
+2016-06-14 20:29:32,273 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Help.db
+2016-06-14 20:29:32,276 DEBUG    errbot.core               Adding command : about -> about
+2016-06-14 20:29:32,276 DEBUG    errbot.core               Adding command : apropos -> apropos
+2016-06-14 20:29:32,277 DEBUG    errbot.core               Adding command : help -> help
+2016-06-14 20:29:32,277 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2016-06-14 20:29:32,278 INFO     errbot.plugin_manager     Activate plugin: Plugins
+2016-06-14 20:29:32,278 DEBUG    errbot.plugin_manager     Plugin Plugins has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:29:32,278 INFO     errbot.plugin_manager     Activating Plugins with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:29:32,279 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:29:32,279 DEBUG    errbot.botplugin          Init storage for Plugins
+2016-06-14 20:29:32,279 DEBUG    errbot.storage            Opening storage 'Plugins'
+2016-06-14 20:29:32,280 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Plugins.db
+2016-06-14 20:29:32,282 DEBUG    errbot.core               Adding command : plugin_activate -> plugin_activate
+2016-06-14 20:29:32,283 DEBUG    errbot.core               Adding command : plugin_blacklist -> plugin_blacklist
+2016-06-14 20:29:32,283 DEBUG    errbot.core               Adding command : plugin_config -> plugin_config
+2016-06-14 20:29:32,283 DEBUG    errbot.core               Adding command : plugin_deactivate -> plugin_deactivate
+2016-06-14 20:29:32,283 DEBUG    errbot.core               Adding command : plugin_reload -> plugin_reload
+2016-06-14 20:29:32,284 DEBUG    errbot.core               Adding command : plugin_unblacklist -> plugin_unblacklist
+2016-06-14 20:29:32,284 DEBUG    errbot.core               Adding command : repos -> repos
+2016-06-14 20:29:32,284 DEBUG    errbot.core               Adding command : repos_install -> repos_install
+2016-06-14 20:29:32,284 DEBUG    errbot.core               Adding command : repos_search -> repos_search
+2016-06-14 20:29:32,284 DEBUG    errbot.core               Adding command : repos_uninstall -> repos_uninstall
+2016-06-14 20:29:32,285 DEBUG    errbot.core               Adding command : repos_update -> repos_update
+2016-06-14 20:29:32,285 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2016-06-14 20:29:32,286 INFO     errbot.plugin_manager     Activate plugin: Utils
+2016-06-14 20:29:32,286 DEBUG    errbot.plugin_manager     Plugin Utils has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:29:32,286 INFO     errbot.plugin_manager     Activating Utils with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:29:32,287 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:29:32,287 DEBUG    errbot.botplugin          Init storage for Utils
+2016-06-14 20:29:32,287 DEBUG    errbot.storage            Opening storage 'Utils'
+2016-06-14 20:29:32,288 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Utils.db
+2016-06-14 20:29:32,290 DEBUG    errbot.core               Adding command : echo -> echo
+2016-06-14 20:29:32,291 DEBUG    errbot.core               Adding command : history -> history
+2016-06-14 20:29:32,291 DEBUG    errbot.core               Adding command : log_tail -> log_tail
+2016-06-14 20:29:32,291 DEBUG    errbot.core               Adding command : render_test -> render_test
+2016-06-14 20:29:32,291 DEBUG    errbot.core               Adding command : whoami -> whoami
+2016-06-14 20:29:32,292 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2016-06-14 20:29:32,293 INFO     errbot.plugin_manager     Activate plugin: VersionChecker
+2016-06-14 20:29:32,293 DEBUG    errbot.plugin_manager     Plugin VersionChecker has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:29:32,293 INFO     errbot.plugin_manager     Activating VersionChecker with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:29:32,294 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:29:32,294 DEBUG    errbot.plugins.VersionChecker Checking version in background.
+2016-06-14 20:29:32,296 DEBUG    errbot.botplugin          Programming the polling of version_check every 86400 seconds with args [] and kwargs {}
+2016-06-14 20:29:32,296 DEBUG    errbot.botplugin          Init storage for VersionChecker
+2016-06-14 20:29:32,297 DEBUG    errbot.storage            Opening storage 'VersionChecker'
+2016-06-14 20:29:32,297 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/VersionChecker.db
+2016-06-14 20:29:32,300 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2016-06-14 20:29:32,300 INFO     errbot.plugin_manager     Activate plugin: Webserver
+2016-06-14 20:29:32,301 DEBUG    errbot.plugin_manager     Plugin Webserver has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:29:32,301 INFO     errbot.plugin_manager     Activating Webserver with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:29:32,301 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:29:32,301 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2016-06-14 20:29:32,301 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2016-06-14 20:29:32,313 INFO     errbot.core_plugins.wsview Webhook routing echo
+2016-06-14 20:29:32,313 INFO     errbot.plugin_manager     Activate plugin: Example
+2016-06-14 20:29:32,314 DEBUG    errbot.plugin_manager     Plugin Example has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:29:32,314 INFO     errbot.plugin_manager     Activating Example with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:29:32,314 DEBUG    errbot.templating         No templates directory found for this plugin [Looking for /Users/ryanhartje/source/python/errbot-tyler/plugins/err-example/templates]
+2016-06-14 20:29:32,316 DEBUG    errbot.botplugin          Init storage for Example
+2016-06-14 20:29:32,316 DEBUG    errbot.storage            Opening storage 'Example'
+2016-06-14 20:29:32,317 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Example.db
+2016-06-14 20:29:32,321 DEBUG    errbot.core               Adding command : tryme -> tryme
+2016-06-14 20:29:32,321 INFO     errbot.core_plugins.wsview Checking Example for webhooks
+2016-06-14 20:29:32,322 DEBUG    errbot.plugin_manager     Activate flow plugins ...
+2016-06-14 20:29:32,322 INFO     errbot.core               
+2016-06-14 20:29:32,322 INFO     errbot.core               Notifying connection to all the plugins...
+2016-06-14 20:29:32,322 DEBUG    errbot.core               Trigger callback_connect on ACLS
+2016-06-14 20:29:32,322 DEBUG    errbot.core               Trigger callback_connect on Backup
+2016-06-14 20:29:32,323 DEBUG    errbot.core               Trigger callback_connect on ChatRoom
+2016-06-14 20:29:32,323 INFO     errbot.plugins.ChatRoom   Callback_connect
+2016-06-14 20:29:32,323 DEBUG    errbot.plugins.ChatRoom   Try to join room 'general'
+2016-06-14 20:29:32,323 INFO     errbot.plugins.ChatRoom   Joining room general with username Errbot
+2016-06-14 20:29:32,324 INFO     errbot.backends.slack     Joining channel #general
+2016-06-14 20:29:32,747 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:29:32,966 DEBUG    requests.packages.urllib3.connectionpool "POST /api/channels.join HTTP/1.1" 200 None
+2016-06-14 20:29:32,977 ERROR    errbot.plugins.ChatRoom   Joining room 'general' failed
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/errbot/backends/slack.py", line 829, in join
+    self._bot.api_call('channels.join', data={'name': self.name})
+  File "/usr/local/lib/python3.5/site-packages/errbot/backends/slack.py", line 268, in api_call
+    error=response['error']
+yapsy_loaded_plugin_Slack_0.SlackAPIResponseError: Slack API call to channels.join failed: user_is_bot
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/errbot/core_plugins/chatRoom.py", line 28, in callback_connect
+    self._join_room(room)
+  File "/usr/local/lib/python3.5/site-packages/errbot/core_plugins/chatRoom.py", line 44, in _join_room
+    self.query_room(room).join(username=self.bot_config.CHATROOM_FN, password=password)
+  File "/usr/local/lib/python3.5/site-packages/errbot/backends/slack.py", line 832, in join
+    raise RoomError("Unable to join channel. " + USER_IS_BOT_HELPTEXT)
+errbot.backends.base.RoomError: Unable to join channel. Connected to Slack using a bot account, which cannot manage channels itself (you must invite the bot to channels instead, it will auto-accept) nor invite people.
+
+If you need this functionality, you will have to create a regular user account and connect Err using that account. For this, you will also need to generate a user token at https://api.slack.com/web.
+2016-06-14 20:29:32,982 DEBUG    errbot.core               Trigger callback_connect on Flows
+2016-06-14 20:29:32,983 DEBUG    errbot.core               Trigger callback_connect on Health
+2016-06-14 20:29:32,983 DEBUG    errbot.core               Trigger callback_connect on Help
+2016-06-14 20:29:32,984 DEBUG    errbot.core               Trigger callback_connect on Plugins
+2016-06-14 20:29:32,984 DEBUG    errbot.core               Trigger callback_connect on Utils
+2016-06-14 20:29:32,984 DEBUG    errbot.core               Trigger callback_connect on VersionChecker
+2016-06-14 20:29:32,985 DEBUG    errbot.core               Trigger callback_connect on Example
+2016-06-14 20:29:32,985 INFO     errbot.core               Plugin activation done.
+2016-06-14 20:29:32,986 DEBUG    errbot.core               Triggering callback_presence on ACLS
+2016-06-14 20:29:32,986 DEBUG    errbot.core               Triggering callback_presence on Backup
+2016-06-14 20:29:32,986 DEBUG    errbot.core               Triggering callback_presence on ChatRoom
+2016-06-14 20:29:32,987 DEBUG    errbot.core               Triggering callback_presence on Flows
+2016-06-14 20:29:32,987 DEBUG    errbot.core               Triggering callback_presence on Health
+2016-06-14 20:29:32,988 DEBUG    errbot.core               Triggering callback_presence on Help
+2016-06-14 20:29:32,988 DEBUG    errbot.core               Triggering callback_presence on Plugins
+2016-06-14 20:29:32,988 DEBUG    errbot.core               Triggering callback_presence on Utils
+2016-06-14 20:29:32,989 DEBUG    errbot.core               Triggering callback_presence on VersionChecker
+2016-06-14 20:29:32,989 DEBUG    errbot.core               Triggering callback_presence on Example
+2016-06-14 20:29:33,995 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-14 20:29:35,000 DEBUG    errbot.backends.slack     Processing slack event: {'user': 'U1GUCAK5Z', 'type': 'presence_change', 'presence': 'active'}
+2016-06-14 20:29:35,000 DEBUG    errbot.core               Triggering callback_presence on ACLS
+2016-06-14 20:29:35,000 DEBUG    errbot.core               Triggering callback_presence on Backup
+2016-06-14 20:29:35,001 DEBUG    errbot.core               Triggering callback_presence on ChatRoom
+2016-06-14 20:29:35,001 DEBUG    errbot.core               Triggering callback_presence on Flows
+2016-06-14 20:29:35,002 DEBUG    errbot.core               Triggering callback_presence on Health
+2016-06-14 20:29:35,002 DEBUG    errbot.core               Triggering callback_presence on Help
+2016-06-14 20:29:35,002 DEBUG    errbot.core               Triggering callback_presence on Plugins
+2016-06-14 20:29:35,003 DEBUG    errbot.core               Triggering callback_presence on Utils
+2016-06-14 20:29:35,003 DEBUG    errbot.core               Triggering callback_presence on VersionChecker
+2016-06-14 20:29:35,003 DEBUG    errbot.core               Triggering callback_presence on Example
+2016-06-14 20:29:43,772 DEBUG    errbot.plugins.VersionChecker Tested current Errbot version and it is 4.1.3
+2016-06-14 20:30:10,108 DEBUG    errbot.backends.slack     No event handler available for user_typing, ignoring this event
+2016-06-14 20:30:13,122 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-14 20:30:14,125 DEBUG    errbot.backends.slack     No event handler available for user_typing, ignoring this event
+2016-06-14 20:30:29,266 INFO     errbot.backends.slack     Interrupt received, shutting down..
+2016-06-14 20:30:29,268 DEBUG    errbot.backends.slack     Triggering disconnect callback
+2016-06-14 20:30:29,269 INFO     errbot.core               Disconnect callback, deactivating all the plugins.
+2016-06-14 20:30:29,272 DEBUG    errbot.storage            Closed storage 'ACLS'
+2016-06-14 20:30:29,273 DEBUG    errbot.core               Removing command filter: acls
+2016-06-14 20:30:29,274 DEBUG    errbot.storage            Closed storage 'Backup'
+2016-06-14 20:30:29,276 DEBUG    errbot.storage            Closed storage 'Flows'
+2016-06-14 20:30:29,277 DEBUG    errbot.storage            Closed storage 'Utils'
+2016-06-14 20:30:29,279 DEBUG    errbot.storage            Closed storage 'Help'
+2016-06-14 20:30:29,281 DEBUG    errbot.storage            Closed storage 'Health'
+2016-06-14 20:30:29,282 DEBUG    errbot.storage            Closed storage 'Plugins'
+2016-06-14 20:30:29,284 DEBUG    errbot.botplugin          You still have active pollers at deactivation stage, I cleaned them up for you.
+2016-06-14 20:30:29,284 DEBUG    errbot.storage            Closed storage 'VersionChecker'
+2016-06-14 20:30:29,286 DEBUG    errbot.storage            Closed storage 'ChatRoom'
+2016-06-14 20:30:29,287 DEBUG    errbot.storage            Closed storage 'Example'
+2016-06-14 20:30:29,288 INFO     errbot.backends.base      Trigger shutdown
+2016-06-14 20:30:29,289 DEBUG    errbot.storage            Closed storage 'slack_backend'
+2016-06-14 20:30:29,289 INFO     errbot.plugin_manager     Shutdown.
+2016-06-14 20:30:29,292 DEBUG    errbot.storage            Closed storage 'core'
+2016-06-14 20:30:29,293 INFO     errbot.plugin_manager     Bye.
+2016-06-14 20:30:29,293 DEBUG    errbot.storage            Closed storage 'repomgr'
+2016-06-14 20:30:29,294 INFO     errbot.cli                Process exiting
+2016-06-14 20:30:57,275 INFO     errbot.specific_plugin_manager storage search paths {'/usr/local/lib/python3.5/site-packages/errbot/storage'}
+2016-06-14 20:30:57,286 INFO     errbot.specific_plugin_manager Found those plugings available:
+2016-06-14 20:30:57,287 INFO     errbot.specific_plugin_manager 	    Memory  (/usr/local/lib/python3.5/site-packages/errbot/storage/memory.py)
+2016-06-14 20:30:57,287 INFO     errbot.specific_plugin_manager 	     Shelf  (/usr/local/lib/python3.5/site-packages/errbot/storage/shelf.py)
+2016-06-14 20:30:57,288 INFO     errbot.bootstrap          Found Storage plugin: 'Shelf'
+Description: This is the storage plugin for the traditional shelf store for errbot.
+2016-06-14 20:30:57,288 DEBUG    errbot.specific_plugin_manager Refilter the plugins...
+2016-06-14 20:30:57,289 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/storage/memory.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:30:57,291 DEBUG    errbot.specific_plugin_manager Load the one remaining...
+2016-06-14 20:30:57,299 DEBUG    errbot.specific_plugin_manager Class to load ShelfStoragePlugin
+2016-06-14 20:30:57,300 DEBUG    errbot.storage            Opening storage 'repomgr'
+2016-06-14 20:30:57,301 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/repomgr.db
+2016-06-14 20:30:57,316 DEBUG    errbot.storage            Opening storage 'core'
+2016-06-14 20:30:57,317 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/core.db
+2016-06-14 20:30:57,320 INFO     errbot.specific_plugin_manager backends search paths {'/usr/local/lib/python3.5/site-packages/errbot/backends'}
+2016-06-14 20:30:57,355 INFO     errbot.specific_plugin_manager Found those plugings available:
+2016-06-14 20:30:57,355 INFO     errbot.specific_plugin_manager 	   Graphic  (/usr/local/lib/python3.5/site-packages/errbot/backends/graphic.py)
+2016-06-14 20:30:57,356 INFO     errbot.specific_plugin_manager 	   Hipchat  (/usr/local/lib/python3.5/site-packages/errbot/backends/hipchat.py)
+2016-06-14 20:30:57,356 INFO     errbot.specific_plugin_manager 	       IRC  (/usr/local/lib/python3.5/site-packages/errbot/backends/irc.py)
+2016-06-14 20:30:57,357 INFO     errbot.specific_plugin_manager 	      Null  (/usr/local/lib/python3.5/site-packages/errbot/backends/null.py)
+2016-06-14 20:30:57,357 INFO     errbot.specific_plugin_manager 	     Slack  (/usr/local/lib/python3.5/site-packages/errbot/backends/slack.py)
+2016-06-14 20:30:57,358 INFO     errbot.specific_plugin_manager 	  Telegram  (/usr/local/lib/python3.5/site-packages/errbot/backends/telegram_messenger.py)
+2016-06-14 20:30:57,358 INFO     errbot.specific_plugin_manager 	      Test  (/usr/local/lib/python3.5/site-packages/errbot/backends/test.py)
+2016-06-14 20:30:57,358 INFO     errbot.specific_plugin_manager 	      Text  (/usr/local/lib/python3.5/site-packages/errbot/backends/text.py)
+2016-06-14 20:30:57,359 INFO     errbot.specific_plugin_manager 	      XMPP  (/usr/local/lib/python3.5/site-packages/errbot/backends/xmpp.py)
+2016-06-14 20:30:57,359 INFO     errbot.bootstrap          Found Backend plugin: 'Slack'
+						Description: This is the slack backend for Err.
+2016-06-14 20:30:57,360 DEBUG    errbot.specific_plugin_manager Refilter the plugins...
+2016-06-14 20:30:57,361 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/graphic.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:30:57,362 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/hipchat.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:30:57,363 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/irc.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:30:57,364 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/null.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:30:57,366 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/telegram_messenger.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:30:57,367 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/test.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:30:57,368 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/text.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:30:57,368 WARNING  yapsy                     Plugin candidate '/usr/local/lib/python3.5/site-packages/errbot/backends/xmpp.plug'  rejected by strategy 'SpecificBackendLocator'
+2016-06-14 20:30:57,368 DEBUG    errbot.specific_plugin_manager Load the one remaining...
+2016-06-14 20:30:57,985 DEBUG    errbot.specific_plugin_manager Class to load SlackBackend
+2016-06-14 20:30:57,985 DEBUG    errbot.core               ErrBot init.
+2016-06-14 20:30:57,986 DEBUG    errbot.backends.base      Backend init.
+2016-06-14 20:30:57,997 DEBUG    errbot.core               created the thread pool<threadpool.ThreadPool object at 0x110213550>
+2016-06-14 20:30:58,024 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.smart_strong".
+2016-06-14 20:30:58,025 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.smart_strong.SmartEmphasisExtension".
+2016-06-14 20:30:58,025 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.fenced_code".
+2016-06-14 20:30:58,026 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2016-06-14 20:30:58,029 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.footnotes".
+2016-06-14 20:30:58,030 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+2016-06-14 20:30:58,044 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.attr_list".
+2016-06-14 20:30:58,045 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+2016-06-14 20:30:58,048 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.def_list".
+2016-06-14 20:30:58,048 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+2016-06-14 20:30:58,052 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.tables".
+2016-06-14 20:30:58,052 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.tables.TableExtension".
+2016-06-14 20:30:58,058 DEBUG    MARKDOWN                  Successfuly imported extension module "markdown.extensions.abbr".
+2016-06-14 20:30:58,060 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+2016-06-14 20:30:58,062 DEBUG    MARKDOWN                  Successfully loaded extension "markdown.extensions.extra.ExtraExtension".
+2016-06-14 20:30:58,063 DEBUG    MARKDOWN                  Successfully loaded extension "errbot.rendering.ansiext.AnsiExtension".
+2016-06-14 20:30:58,065 DEBUG    errbot.core               Initializing backend storage
+2016-06-14 20:30:58,065 DEBUG    errbot.storage            Opening storage 'slack_backend'
+2016-06-14 20:30:58,066 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/slack_backend.db
+2016-06-14 20:30:58,071 DEBUG    errbot.plugin_manager     All plugin roots:
+2016-06-14 20:30:58,071 DEBUG    errbot.plugin_manager     -> /Users/ryanhartje/source/python/errbot-tyler/plugins/tyler
+2016-06-14 20:30:58,072 DEBUG    errbot.plugin_manager     Add /Users/ryanhartje/source/python/errbot-tyler/plugins/tyler to sys.path
+2016-06-14 20:30:58,072 DEBUG    errbot.plugin_manager     -> /Users/ryanhartje/source/python/errbot-tyler/plugins/err-example
+2016-06-14 20:30:58,074 DEBUG    errbot.plugin_manager     Add /Users/ryanhartje/source/python/errbot-tyler/plugins/err-example to sys.path
+2016-06-14 20:30:58,074 DEBUG    errbot.plugin_manager     -> /usr/local/lib/python3.5/site-packages/errbot/core_plugins
+2016-06-14 20:30:58,074 DEBUG    errbot.plugin_manager     Add /usr/local/lib/python3.5/site-packages/errbot/core_plugins to sys.path
+2016-06-14 20:30:58,074 DEBUG    errbot.plugin_manager     check dependencies of /Users/ryanhartje/source/python/errbot-tyler/plugins/tyler
+2016-06-14 20:30:58,075 DEBUG    errbot.plugin_manager     /Users/ryanhartje/source/python/errbot-tyler/plugins/tyler has no requirements.txt file
+2016-06-14 20:30:58,075 DEBUG    errbot.plugin_manager     check dependencies of /Users/ryanhartje/source/python/errbot-tyler/plugins/err-example
+2016-06-14 20:30:58,090 DEBUG    errbot.plugin_manager     /Users/ryanhartje/source/python/errbot-tyler/plugins/err-example has no requirements.txt file
+2016-06-14 20:30:58,091 DEBUG    errbot.plugin_manager     check dependencies of /usr/local/lib/python3.5/site-packages/errbot/core_plugins
+2016-06-14 20:30:58,091 DEBUG    errbot.plugin_manager     /usr/local/lib/python3.5/site-packages/errbot/core_plugins has no requirements.txt file
+2016-06-14 20:30:58,157 DEBUG    yapsy_loaded_plugin_ChatRoom_0 LOADING CHATROOM
+2016-06-14 20:30:58,531 INFO     errbot                    webhooks:  Flag to bind /echo to echo
+2016-06-14 20:30:58,536 DEBUG    errbot.bootstrap          Start serving commands from the slack backend
+2016-06-14 20:30:58,536 INFO     errbot.backends.slack     Verifying authentication token
+2016-06-14 20:30:58,684 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:30:59,330 DEBUG    requests.packages.urllib3.connectionpool "POST /api/auth.test HTTP/1.1" 200 None
+2016-06-14 20:30:59,340 DEBUG    errbot.backends.slack     Token accepted
+2016-06-14 20:30:59,340 INFO     errbot.backends.slack     Connecting to Slack real-time-messaging API
+2016-06-14 20:30:59,344 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:30:59,672 DEBUG    requests.packages.urllib3.connectionpool "POST /api/rtm.start HTTP/1.1" 200 None
+2016-06-14 20:31:00,705 INFO     errbot.backends.slack     Connected
+2016-06-14 20:31:01,709 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'hello'}
+2016-06-14 20:31:01,709 INFO     errbot.core               Activate internal commands
+2016-06-14 20:31:01,710 INFO     errbot.plugin_manager     Activate bot plugins...
+2016-06-14 20:31:01,710 INFO     errbot.plugin_manager     Activate plugin: Tyler
+2016-06-14 20:31:01,711 DEBUG    errbot.plugin_manager     Plugin Tyler has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:31:01,711 INFO     errbot.plugin_manager     Activating Tyler with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:31:01,712 DEBUG    errbot.templating         No templates directory found for this plugin [Looking for /Users/ryanhartje/source/python/errbot-tyler/plugins/tyler/templates]
+2016-06-14 20:31:01,712 DEBUG    errbot.botplugin          Init storage for Tyler
+2016-06-14 20:31:01,713 DEBUG    errbot.storage            Opening storage 'Tyler'
+2016-06-14 20:31:01,713 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Tyler.db
+2016-06-14 20:31:01,716 DEBUG    errbot.core               Adding command : tyler -> tyler
+2016-06-14 20:31:01,717 INFO     errbot.core_plugins.wsview Checking Tyler for webhooks
+2016-06-14 20:31:01,717 INFO     errbot.plugin_manager     Activate plugin: Example
+2016-06-14 20:31:01,718 DEBUG    errbot.plugin_manager     Plugin Example has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:31:01,718 INFO     errbot.plugin_manager     Activating Example with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:31:01,719 DEBUG    errbot.templating         No templates directory found for this plugin [Looking for /Users/ryanhartje/source/python/errbot-tyler/plugins/err-example/templates]
+2016-06-14 20:31:01,720 DEBUG    errbot.botplugin          Init storage for Example
+2016-06-14 20:31:01,720 DEBUG    errbot.storage            Opening storage 'Example'
+2016-06-14 20:31:01,720 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Example.db
+2016-06-14 20:31:01,723 DEBUG    errbot.core               Adding command : tryme -> tryme
+2016-06-14 20:31:01,724 INFO     errbot.core_plugins.wsview Checking Example for webhooks
+2016-06-14 20:31:01,724 INFO     errbot.plugin_manager     Activate plugin: ACLs
+2016-06-14 20:31:01,725 DEBUG    errbot.plugin_manager     Plugin ACLs has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:31:01,725 INFO     errbot.plugin_manager     Activating ACLs with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:31:01,725 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:31:01,726 DEBUG    errbot.botplugin          Init storage for ACLS
+2016-06-14 20:31:01,726 DEBUG    errbot.storage            Opening storage 'ACLS'
+2016-06-14 20:31:01,726 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/ACLS.db
+2016-06-14 20:31:01,729 DEBUG    errbot.core               Adding command filter: acls
+2016-06-14 20:31:01,730 INFO     errbot.core_plugins.wsview Checking ACLS for webhooks
+2016-06-14 20:31:01,730 INFO     errbot.plugin_manager     Activate plugin: Backup
+2016-06-14 20:31:01,731 DEBUG    errbot.plugin_manager     Plugin Backup has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:31:01,731 INFO     errbot.plugin_manager     Activating Backup with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:31:01,731 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:31:01,731 DEBUG    errbot.botplugin          Init storage for Backup
+2016-06-14 20:31:01,732 DEBUG    errbot.storage            Opening storage 'Backup'
+2016-06-14 20:31:01,732 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Backup.db
+2016-06-14 20:31:01,735 DEBUG    errbot.core               Adding command : backup -> backup
+2016-06-14 20:31:01,736 INFO     errbot.core_plugins.wsview Checking Backup for webhooks
+2016-06-14 20:31:01,736 INFO     errbot.plugin_manager     Activate plugin: ChatRoom
+2016-06-14 20:31:01,737 DEBUG    errbot.plugin_manager     Plugin ChatRoom has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:31:01,737 INFO     errbot.plugin_manager     Activating ChatRoom with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:31:01,737 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:31:01,738 DEBUG    errbot.botplugin          Init storage for ChatRoom
+2016-06-14 20:31:01,738 DEBUG    errbot.storage            Opening storage 'ChatRoom'
+2016-06-14 20:31:01,738 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/ChatRoom.db
+2016-06-14 20:31:01,741 DEBUG    errbot.core               Adding command : room_create -> room_create
+2016-06-14 20:31:01,741 DEBUG    errbot.core               Adding command : room_destroy -> room_destroy
+2016-06-14 20:31:01,742 DEBUG    errbot.core               Adding command : room_invite -> room_invite
+2016-06-14 20:31:01,742 DEBUG    errbot.core               Adding command : room_join -> room_join
+2016-06-14 20:31:01,742 DEBUG    errbot.core               Adding command : room_leave -> room_leave
+2016-06-14 20:31:01,742 DEBUG    errbot.core               Adding command : room_list -> room_list
+2016-06-14 20:31:01,743 DEBUG    errbot.core               Adding command : room_occupants -> room_occupants
+2016-06-14 20:31:01,743 DEBUG    errbot.core               Adding command : room_topic -> room_topic
+2016-06-14 20:31:01,743 INFO     errbot.core_plugins.wsview Checking ChatRoom for webhooks
+2016-06-14 20:31:01,744 INFO     errbot.plugin_manager     Activate plugin: Flows
+2016-06-14 20:31:01,744 DEBUG    errbot.plugin_manager     Plugin Flows has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:31:01,744 INFO     errbot.plugin_manager     Activating Flows with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:31:01,745 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:31:01,745 DEBUG    errbot.botplugin          Init storage for Flows
+2016-06-14 20:31:01,745 DEBUG    errbot.storage            Opening storage 'Flows'
+2016-06-14 20:31:01,746 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Flows.db
+2016-06-14 20:31:01,762 DEBUG    errbot.core               Adding command : flows_kill -> flows_kill
+2016-06-14 20:31:01,763 DEBUG    errbot.core               Adding command : flows_list -> flows_list
+2016-06-14 20:31:01,763 DEBUG    errbot.core               Adding command : flows_show -> flows_show
+2016-06-14 20:31:01,763 DEBUG    errbot.core               Adding command : flows_start -> flows_start
+2016-06-14 20:31:01,764 DEBUG    errbot.core               Adding command : flows_status -> flows_status
+2016-06-14 20:31:01,764 DEBUG    errbot.core               Adding command : flows_stop -> flows_stop
+2016-06-14 20:31:01,766 INFO     errbot.core_plugins.wsview Checking Flows for webhooks
+2016-06-14 20:31:01,767 INFO     errbot.plugin_manager     Activate plugin: Health
+2016-06-14 20:31:01,768 DEBUG    errbot.plugin_manager     Plugin Health has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:31:01,768 INFO     errbot.plugin_manager     Activating Health with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:31:01,768 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:31:01,769 DEBUG    errbot.botplugin          Init storage for Health
+2016-06-14 20:31:01,769 DEBUG    errbot.storage            Opening storage 'Health'
+2016-06-14 20:31:01,769 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Health.db
+2016-06-14 20:31:01,773 DEBUG    errbot.core               Adding command : restart -> restart
+2016-06-14 20:31:01,773 DEBUG    errbot.core               Adding command : shutdown -> shutdown
+2016-06-14 20:31:01,773 DEBUG    errbot.core               Adding command : status -> status
+2016-06-14 20:31:01,773 DEBUG    errbot.core               Adding command : status_gc -> status_gc
+2016-06-14 20:31:01,774 DEBUG    errbot.core               Adding command : status_load -> status_load
+2016-06-14 20:31:01,774 DEBUG    errbot.core               Adding command : status_plugins -> status_plugins
+2016-06-14 20:31:01,774 DEBUG    errbot.core               Adding command : uptime -> uptime
+2016-06-14 20:31:01,775 INFO     errbot.core_plugins.wsview Checking Health for webhooks
+2016-06-14 20:31:01,775 INFO     errbot.plugin_manager     Activate plugin: Help
+2016-06-14 20:31:01,776 DEBUG    errbot.plugin_manager     Plugin Help has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:31:01,776 INFO     errbot.plugin_manager     Activating Help with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:31:01,776 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:31:01,777 DEBUG    errbot.botplugin          Init storage for Help
+2016-06-14 20:31:01,777 DEBUG    errbot.storage            Opening storage 'Help'
+2016-06-14 20:31:01,777 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Help.db
+2016-06-14 20:31:01,780 DEBUG    errbot.core               Adding command : about -> about
+2016-06-14 20:31:01,780 DEBUG    errbot.core               Adding command : apropos -> apropos
+2016-06-14 20:31:01,781 DEBUG    errbot.core               Adding command : help -> help
+2016-06-14 20:31:01,781 INFO     errbot.core_plugins.wsview Checking Help for webhooks
+2016-06-14 20:31:01,782 INFO     errbot.plugin_manager     Activate plugin: Plugins
+2016-06-14 20:31:01,782 DEBUG    errbot.plugin_manager     Plugin Plugins has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:31:01,782 INFO     errbot.plugin_manager     Activating Plugins with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:31:01,783 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:31:01,783 DEBUG    errbot.botplugin          Init storage for Plugins
+2016-06-14 20:31:01,783 DEBUG    errbot.storage            Opening storage 'Plugins'
+2016-06-14 20:31:01,784 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Plugins.db
+2016-06-14 20:31:01,787 DEBUG    errbot.core               Adding command : plugin_activate -> plugin_activate
+2016-06-14 20:31:01,787 DEBUG    errbot.core               Adding command : plugin_blacklist -> plugin_blacklist
+2016-06-14 20:31:01,787 DEBUG    errbot.core               Adding command : plugin_config -> plugin_config
+2016-06-14 20:31:01,787 DEBUG    errbot.core               Adding command : plugin_deactivate -> plugin_deactivate
+2016-06-14 20:31:01,788 DEBUG    errbot.core               Adding command : plugin_reload -> plugin_reload
+2016-06-14 20:31:01,788 DEBUG    errbot.core               Adding command : plugin_unblacklist -> plugin_unblacklist
+2016-06-14 20:31:01,788 DEBUG    errbot.core               Adding command : repos -> repos
+2016-06-14 20:31:01,788 DEBUG    errbot.core               Adding command : repos_install -> repos_install
+2016-06-14 20:31:01,789 DEBUG    errbot.core               Adding command : repos_search -> repos_search
+2016-06-14 20:31:01,789 DEBUG    errbot.core               Adding command : repos_uninstall -> repos_uninstall
+2016-06-14 20:31:01,789 DEBUG    errbot.core               Adding command : repos_update -> repos_update
+2016-06-14 20:31:01,790 INFO     errbot.core_plugins.wsview Checking Plugins for webhooks
+2016-06-14 20:31:01,790 INFO     errbot.plugin_manager     Activate plugin: Utils
+2016-06-14 20:31:01,790 DEBUG    errbot.plugin_manager     Plugin Utils has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:31:01,791 INFO     errbot.plugin_manager     Activating Utils with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:31:01,791 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:31:01,791 DEBUG    errbot.botplugin          Init storage for Utils
+2016-06-14 20:31:01,791 DEBUG    errbot.storage            Opening storage 'Utils'
+2016-06-14 20:31:01,792 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/Utils.db
+2016-06-14 20:31:01,795 DEBUG    errbot.core               Adding command : echo -> echo
+2016-06-14 20:31:01,795 DEBUG    errbot.core               Adding command : history -> history
+2016-06-14 20:31:01,795 DEBUG    errbot.core               Adding command : log_tail -> log_tail
+2016-06-14 20:31:01,796 DEBUG    errbot.core               Adding command : render_test -> render_test
+2016-06-14 20:31:01,796 DEBUG    errbot.core               Adding command : whoami -> whoami
+2016-06-14 20:31:01,796 INFO     errbot.core_plugins.wsview Checking Utils for webhooks
+2016-06-14 20:31:01,797 INFO     errbot.plugin_manager     Activate plugin: VersionChecker
+2016-06-14 20:31:01,798 DEBUG    errbot.plugin_manager     Plugin VersionChecker has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:31:01,798 INFO     errbot.plugin_manager     Activating VersionChecker with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:31:01,798 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:31:01,811 DEBUG    errbot.plugins.VersionChecker Checking version in background.
+2016-06-14 20:31:01,814 DEBUG    errbot.botplugin          Programming the polling of version_check every 86400 seconds with args [] and kwargs {}
+2016-06-14 20:31:01,814 DEBUG    errbot.botplugin          Init storage for VersionChecker
+2016-06-14 20:31:01,814 DEBUG    errbot.storage            Opening storage 'VersionChecker'
+2016-06-14 20:31:01,815 DEBUG    errbot.storage.shelf      Open shelf storage /Users/ryanhartje/source/python/errbot-tyler/data/VersionChecker.db
+2016-06-14 20:31:01,819 INFO     errbot.core_plugins.wsview Checking VersionChecker for webhooks
+2016-06-14 20:31:01,820 INFO     errbot.plugin_manager     Activate plugin: Webserver
+2016-06-14 20:31:01,820 DEBUG    errbot.plugin_manager     Plugin Webserver has no section [Errbot]. Assuming this plugin is runnning on any Errbot version.
+2016-06-14 20:31:01,821 INFO     errbot.plugin_manager     Activating Webserver with min_err_version = 4.2.1 and max_version = 4.2.1
+2016-06-14 20:31:01,821 DEBUG    errbot.templating         Templates directory found for this plugin [/usr/local/lib/python3.5/site-packages/errbot/core_plugins/templates]
+2016-06-14 20:31:01,822 INFO     errbot.plugins.Webserver  Webserver is not configured. Forbid activation
+2016-06-14 20:31:01,824 INFO     errbot.core_plugins.wsview Checking Webserver for webhooks
+2016-06-14 20:31:01,824 INFO     errbot.core_plugins.wsview Webhook routing echo
+2016-06-14 20:31:01,825 DEBUG    errbot.plugin_manager     Activate flow plugins ...
+2016-06-14 20:31:01,825 INFO     errbot.core               
+2016-06-14 20:31:01,825 INFO     errbot.core               Notifying connection to all the plugins...
+2016-06-14 20:31:01,826 DEBUG    errbot.core               Trigger callback_connect on Tyler
+2016-06-14 20:31:01,826 DEBUG    errbot.core               Trigger callback_connect on Example
+2016-06-14 20:31:01,826 DEBUG    errbot.core               Trigger callback_connect on ACLS
+2016-06-14 20:31:01,826 DEBUG    errbot.core               Trigger callback_connect on Backup
+2016-06-14 20:31:01,826 DEBUG    errbot.core               Trigger callback_connect on ChatRoom
+2016-06-14 20:31:01,827 INFO     errbot.plugins.ChatRoom   Callback_connect
+2016-06-14 20:31:01,827 DEBUG    errbot.plugins.ChatRoom   Try to join room 'general'
+2016-06-14 20:31:01,827 INFO     errbot.plugins.ChatRoom   Joining room general with username Errbot
+2016-06-14 20:31:01,827 INFO     errbot.backends.slack     Joining channel #general
+2016-06-14 20:31:01,830 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:31:02,099 DEBUG    requests.packages.urllib3.connectionpool "POST /api/channels.join HTTP/1.1" 200 None
+2016-06-14 20:31:02,111 ERROR    errbot.plugins.ChatRoom   Joining room 'general' failed
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/errbot/backends/slack.py", line 829, in join
+    self._bot.api_call('channels.join', data={'name': self.name})
+  File "/usr/local/lib/python3.5/site-packages/errbot/backends/slack.py", line 268, in api_call
+    error=response['error']
+yapsy_loaded_plugin_Slack_0.SlackAPIResponseError: Slack API call to channels.join failed: user_is_bot
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/errbot/core_plugins/chatRoom.py", line 28, in callback_connect
+    self._join_room(room)
+  File "/usr/local/lib/python3.5/site-packages/errbot/core_plugins/chatRoom.py", line 44, in _join_room
+    self.query_room(room).join(username=self.bot_config.CHATROOM_FN, password=password)
+  File "/usr/local/lib/python3.5/site-packages/errbot/backends/slack.py", line 832, in join
+    raise RoomError("Unable to join channel. " + USER_IS_BOT_HELPTEXT)
+errbot.backends.base.RoomError: Unable to join channel. Connected to Slack using a bot account, which cannot manage channels itself (you must invite the bot to channels instead, it will auto-accept) nor invite people.
+
+If you need this functionality, you will have to create a regular user account and connect Err using that account. For this, you will also need to generate a user token at https://api.slack.com/web.
+2016-06-14 20:31:02,117 DEBUG    errbot.core               Trigger callback_connect on Flows
+2016-06-14 20:31:02,118 DEBUG    errbot.core               Trigger callback_connect on Health
+2016-06-14 20:31:02,118 DEBUG    errbot.core               Trigger callback_connect on Help
+2016-06-14 20:31:02,118 DEBUG    errbot.core               Trigger callback_connect on Plugins
+2016-06-14 20:31:02,119 DEBUG    errbot.core               Trigger callback_connect on Utils
+2016-06-14 20:31:02,119 DEBUG    errbot.core               Trigger callback_connect on VersionChecker
+2016-06-14 20:31:02,120 INFO     errbot.core               Plugin activation done.
+2016-06-14 20:31:02,121 DEBUG    errbot.core               Triggering callback_presence on Tyler
+2016-06-14 20:31:02,121 DEBUG    errbot.core               Triggering callback_presence on Example
+2016-06-14 20:31:02,121 DEBUG    errbot.core               Triggering callback_presence on ACLS
+2016-06-14 20:31:02,122 DEBUG    errbot.core               Triggering callback_presence on Backup
+2016-06-14 20:31:02,122 DEBUG    errbot.core               Triggering callback_presence on ChatRoom
+2016-06-14 20:31:02,122 DEBUG    errbot.core               Triggering callback_presence on Flows
+2016-06-14 20:31:02,123 DEBUG    errbot.core               Triggering callback_presence on Health
+2016-06-14 20:31:02,123 DEBUG    errbot.core               Triggering callback_presence on Help
+2016-06-14 20:31:02,123 DEBUG    errbot.core               Triggering callback_presence on Plugins
+2016-06-14 20:31:02,123 DEBUG    errbot.core               Triggering callback_presence on Utils
+2016-06-14 20:31:02,124 DEBUG    errbot.core               Triggering callback_presence on VersionChecker
+2016-06-14 20:31:03,126 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-14 20:31:04,132 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'presence_change', 'presence': 'active', 'user': 'U1GUCAK5Z'}
+2016-06-14 20:31:04,132 DEBUG    errbot.core               Triggering callback_presence on Tyler
+2016-06-14 20:31:04,133 DEBUG    errbot.core               Triggering callback_presence on Example
+2016-06-14 20:31:04,133 DEBUG    errbot.core               Triggering callback_presence on ACLS
+2016-06-14 20:31:04,134 DEBUG    errbot.core               Triggering callback_presence on Backup
+2016-06-14 20:31:04,135 DEBUG    errbot.core               Triggering callback_presence on ChatRoom
+2016-06-14 20:31:04,135 DEBUG    errbot.core               Triggering callback_presence on Flows
+2016-06-14 20:31:04,136 DEBUG    errbot.core               Triggering callback_presence on Health
+2016-06-14 20:31:04,136 DEBUG    errbot.core               Triggering callback_presence on Help
+2016-06-14 20:31:04,136 DEBUG    errbot.core               Triggering callback_presence on Plugins
+2016-06-14 20:31:04,137 DEBUG    errbot.core               Triggering callback_presence on Utils
+2016-06-14 20:31:04,138 DEBUG    errbot.core               Triggering callback_presence on VersionChecker
+2016-06-14 20:31:09,151 DEBUG    errbot.backends.slack     No event handler available for user_typing, ignoring this event
+2016-06-14 20:31:11,157 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'D1H08KR88', 'team': 'T1GLUFZAP', 'ts': '1465954270.000002', 'user': 'U1GVD76CU', 'text': '!plugin activate Tyler'}
+2016-06-14 20:31:11,158 DEBUG    errbot.backends.slack     Saw an event: {'channel': 'D1H08KR88',
+ 'team': 'T1GLUFZAP',
+ 'text': '!plugin activate Tyler',
+ 'ts': '1465954270.000002',
+ 'type': 'message',
+ 'user': 'U1GVD76CU'}
+2016-06-14 20:31:11,159 DEBUG    errbot.backends.slack     Escaped IDs event text: !plugin activate Tyler
+2016-06-14 20:31:11,159 DEBUG    errbot.core               *** frm = @ryantoo
+2016-06-14 20:31:11,160 DEBUG    errbot.core               *** username = @ryantoo
+2016-06-14 20:31:11,160 DEBUG    errbot.core               *** text = !plugin activate Tyler
+2016-06-14 20:31:11,160 DEBUG    errbot.plugins.ACLS       Check plugin_activate for ACLs.
+2016-06-14 20:31:11,161 INFO     errbot.plugins.ACLS       Matching ACL {} against username @ryantoo for command Plugins:plugin_activate
+2016-06-14 20:31:11,161 INFO     errbot.plugins.ACLS       Check if plugin_activate is admin only command.
+2016-06-14 20:31:11,162 INFO     errbot.core               Processing command 'plugin_activate' with parameters 'Tyler' from @ryantoo
+2016-06-14 20:31:11,163 DEBUG    errbot.flow               Test if the command plugin_activate is a trigger for an inflight flow ...
+2016-06-14 20:31:11,163 DEBUG    errbot.flow               None matched.
+2016-06-14 20:31:11,164 DEBUG    errbot.backends.slack     Sending direct message to ryantoo (D1H08KR88)
+2016-06-14 20:31:11,166 DEBUG    errbot.backends.slack     Message size: 27
+2016-06-14 20:31:11,171 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:31:11,459 DEBUG    requests.packages.urllib3.connectionpool "POST /api/chat.postMessage HTTP/1.1" 200 None
+2016-06-14 20:31:11,472 DEBUG    errbot.flow               Test if the command plugin_activate is a trigger for an inflight flow ...
+2016-06-14 20:31:11,472 DEBUG    errbot.flow               None matched.
+2016-06-14 20:31:11,473 DEBUG    errbot.flow               Test if the command plugin_activate is an auto-trigger for any flow ...
+2016-06-14 20:31:11,473 DEBUG    errbot.core               Triggering callback_message on Tyler
+2016-06-14 20:31:11,474 DEBUG    errbot.core               Triggering callback_message on Example
+2016-06-14 20:31:11,474 DEBUG    errbot.core               Triggering callback_message on ACLS
+2016-06-14 20:31:11,475 DEBUG    errbot.core               Triggering callback_message on Backup
+2016-06-14 20:31:11,475 DEBUG    errbot.core               Triggering callback_message on ChatRoom
+2016-06-14 20:31:11,475 DEBUG    errbot.core               Triggering callback_message on Flows
+2016-06-14 20:31:11,476 DEBUG    errbot.core               Triggering callback_message on Health
+2016-06-14 20:31:11,476 DEBUG    errbot.core               Triggering callback_message on Help
+2016-06-14 20:31:11,476 DEBUG    errbot.core               Triggering callback_message on Plugins
+2016-06-14 20:31:11,477 DEBUG    errbot.core               Triggering callback_message on Utils
+2016-06-14 20:31:11,477 DEBUG    errbot.core               Triggering callback_message on VersionChecker
+2016-06-14 20:31:12,131 DEBUG    errbot.plugins.VersionChecker Tested current Errbot version and it is 4.1.3
+2016-06-14 20:31:12,483 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'D1H08KR88', 'team': 'T1GLUFZAP', 'user_team': 'T1GLUFZAP', 'user': 'U1GUCAK5Z', 'ts': '1465954271.000003', 'bot_id': 'B1H0JFV9P', 'user_profile': {'real_name': '', 'first_name': None, 'avatar_hash': 'ef1c76b22752', 'name': 'ryanbottoo', 'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png'}, 'text': 'Tyler is already activated.'}
+2016-06-14 20:31:12,485 DEBUG    errbot.backends.slack     Saw an event: {'bot_id': 'B1H0JFV9P',
+ 'channel': 'D1H08KR88',
+ 'team': 'T1GLUFZAP',
+ 'text': 'Tyler is already activated.',
+ 'ts': '1465954271.000003',
+ 'type': 'message',
+ 'user': 'U1GUCAK5Z',
+ 'user_profile': {'avatar_hash': 'ef1c76b22752',
+                  'first_name': None,
+                  'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png',
+                  'name': 'ryanbottoo',
+                  'real_name': ''},
+ 'user_team': 'T1GLUFZAP'}
+2016-06-14 20:31:12,485 DEBUG    errbot.backends.slack     Escaped IDs event text: Tyler is already activated.
+2016-06-14 20:31:12,486 DEBUG    errbot.core               Ignoring message from self
+2016-06-14 20:31:15,492 DEBUG    errbot.backends.slack     No event handler available for user_typing, ignoring this event
+2016-06-14 20:31:16,498 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'D1H08KR88', 'team': 'T1GLUFZAP', 'ts': '1465954274.000004', 'user': 'U1GVD76CU', 'text': '!tyler'}
+2016-06-14 20:31:16,498 DEBUG    errbot.backends.slack     Saw an event: {'channel': 'D1H08KR88',
+ 'team': 'T1GLUFZAP',
+ 'text': '!tyler',
+ 'ts': '1465954274.000004',
+ 'type': 'message',
+ 'user': 'U1GVD76CU'}
+2016-06-14 20:31:16,499 DEBUG    errbot.backends.slack     Escaped IDs event text: !tyler
+2016-06-14 20:31:16,499 DEBUG    errbot.core               *** frm = @ryantoo
+2016-06-14 20:31:16,500 DEBUG    errbot.core               *** username = @ryantoo
+2016-06-14 20:31:16,500 DEBUG    errbot.core               *** text = !tyler
+2016-06-14 20:31:16,500 DEBUG    errbot.plugins.ACLS       Check tyler for ACLs.
+2016-06-14 20:31:16,501 INFO     errbot.plugins.ACLS       Matching ACL {} against username @ryantoo for command Tyler:tyler
+2016-06-14 20:31:16,501 INFO     errbot.plugins.ACLS       Check if tyler is admin only command.
+2016-06-14 20:31:16,502 INFO     errbot.core               Processing command 'tyler' with parameters '' from @ryantoo
+2016-06-14 20:31:16,502 DEBUG    errbot.core               Triggering callback_message on Tyler
+2016-06-14 20:31:16,503 DEBUG    errbot.flow               Test if the command tyler is a trigger for an inflight flow ...
+2016-06-14 20:31:16,503 DEBUG    errbot.core               Triggering callback_message on Example
+2016-06-14 20:31:16,504 DEBUG    errbot.flow               None matched.
+2016-06-14 20:31:16,504 DEBUG    errbot.core               Triggering callback_message on ACLS
+2016-06-14 20:31:16,505 DEBUG    errbot.backends.slack     Sending direct message to ryantoo (D1H08KR88)
+2016-06-14 20:31:16,505 DEBUG    errbot.core               Triggering callback_message on Backup
+2016-06-14 20:31:16,506 DEBUG    errbot.backends.slack     Message size: 58
+2016-06-14 20:31:16,507 DEBUG    errbot.core               Triggering callback_message on ChatRoom
+2016-06-14 20:31:16,509 DEBUG    errbot.core               Triggering callback_message on Flows
+2016-06-14 20:31:16,510 DEBUG    errbot.core               Triggering callback_message on Health
+2016-06-14 20:31:16,511 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:31:16,511 DEBUG    errbot.core               Triggering callback_message on Help
+2016-06-14 20:31:16,512 DEBUG    errbot.core               Triggering callback_message on Plugins
+2016-06-14 20:31:16,512 DEBUG    errbot.core               Triggering callback_message on Utils
+2016-06-14 20:31:16,512 DEBUG    errbot.core               Triggering callback_message on VersionChecker
+2016-06-14 20:31:16,841 DEBUG    requests.packages.urllib3.connectionpool "POST /api/chat.postMessage HTTP/1.1" 200 None
+2016-06-14 20:31:16,854 DEBUG    errbot.flow               Test if the command tyler is a trigger for an inflight flow ...
+2016-06-14 20:31:16,854 DEBUG    errbot.flow               None matched.
+2016-06-14 20:31:16,854 DEBUG    errbot.flow               Test if the command tyler is an auto-trigger for any flow ...
+2016-06-14 20:31:17,517 DEBUG    errbot.backends.slack     No event handler available for user_typing, ignoring this event
+2016-06-14 20:31:18,520 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'D1H08KR88', 'team': 'T1GLUFZAP', 'user_team': 'T1GLUFZAP', 'user': 'U1GUCAK5Z', 'ts': '1465954276.000005', 'bot_id': 'B1H0JFV9P', 'user_profile': {'real_name': '', 'first_name': None, 'avatar_hash': 'ef1c76b22752', 'name': 'ryanbottoo', 'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png'}, 'text': '<https://media.giphy.com/media/xTiTnHvXHHxOTcdmxO/giphy.gif>'}
+2016-06-14 20:31:18,521 DEBUG    errbot.backends.slack     building an identifier from <https//media.giphy.com/media/xTiTnHvXHHxOTcdmxO/giphy.gif>
+2016-06-14 20:31:18,521 DEBUG    errbot.backends.slack     Tried to build an identifier from '<https://media.giphy.com/media/xTiTnHvXHHxOTcdmxO/giphy.gif>' but got exception: Unparseable slack ID, should start with U, B, C, G or D (got `ttps//media.giphy.com/media/xTiTnHvXHHxOTcdmxO/giphy.gif`)
+2016-06-14 20:31:18,522 DEBUG    errbot.backends.slack     Saw an event: {'bot_id': 'B1H0JFV9P',
+ 'channel': 'D1H08KR88',
+ 'team': 'T1GLUFZAP',
+ 'text': '<https://media.giphy.com/media/xTiTnHvXHHxOTcdmxO/giphy.gif>',
+ 'ts': '1465954276.000005',
+ 'type': 'message',
+ 'user': 'U1GUCAK5Z',
+ 'user_profile': {'avatar_hash': 'ef1c76b22752',
+                  'first_name': None,
+                  'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png',
+                  'name': 'ryanbottoo',
+                  'real_name': ''},
+ 'user_team': 'T1GLUFZAP'}
+2016-06-14 20:31:18,522 DEBUG    errbot.backends.slack     Escaped IDs event text: https://media.giphy.com/media/xTiTnHvXHHxOTcdmxO/giphy.gif
+2016-06-14 20:31:18,523 DEBUG    errbot.core               Ignoring message from self
+2016-06-14 20:31:19,525 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'D1H08KR88', 'event_ts': '1465954277.877944', 'ts': '1465954277.000006', 'previous_message': {'type': 'message', 'bot_id': 'B1H0JFV9P', 'text': '<https://media.giphy.com/media/xTiTnHvXHHxOTcdmxO/giphy.gif>', 'ts': '1465954276.000005', 'user': 'U1GUCAK5Z'}, 'hidden': True, 'subtype': 'message_changed', 'message': {'type': 'message', 'ts': '1465954276.000005', 'user': 'U1GUCAK5Z', 'bot_id': 'B1H0JFV9P', 'attachments': [{'fallback': '325x208px image', 'image_height': 208, 'is_animated': True, 'id': 1, 'image_width': 325, 'image_url': 'https://media.giphy.com/media/xTiTnHvXHHxOTcdmxO/giphy.gif', 'image_bytes': 465685, 'from_url': 'https://media.giphy.com/media/xTiTnHvXHHxOTcdmxO/giphy.gif'}], 'text': '<https://media.giphy.com/media/xTiTnHvXHHxOTcdmxO/giphy.gif>'}}
+2016-06-14 20:31:19,525 DEBUG    errbot.backends.slack     Ignoring message_changed event with attachments, likely caused by Slack auto-expanding a link
+2016-06-14 20:31:20,527 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'D1H08KR88', 'team': 'T1GLUFZAP', 'ts': '1465954277.000007', 'user': 'U1GVD76CU', 'text': '!tyler batman'}
+2016-06-14 20:31:20,528 DEBUG    errbot.backends.slack     Saw an event: {'channel': 'D1H08KR88',
+ 'team': 'T1GLUFZAP',
+ 'text': '!tyler batman',
+ 'ts': '1465954277.000007',
+ 'type': 'message',
+ 'user': 'U1GVD76CU'}
+2016-06-14 20:31:20,528 DEBUG    errbot.backends.slack     Escaped IDs event text: !tyler batman
+2016-06-14 20:31:20,529 DEBUG    errbot.core               *** frm = @ryantoo
+2016-06-14 20:31:20,529 DEBUG    errbot.core               *** username = @ryantoo
+2016-06-14 20:31:20,530 DEBUG    errbot.core               *** text = !tyler batman
+2016-06-14 20:31:20,530 DEBUG    errbot.plugins.ACLS       Check tyler for ACLs.
+2016-06-14 20:31:20,531 INFO     errbot.plugins.ACLS       Matching ACL {} against username @ryantoo for command Tyler:tyler
+2016-06-14 20:31:20,531 INFO     errbot.plugins.ACLS       Check if tyler is admin only command.
+2016-06-14 20:31:20,532 INFO     errbot.core               Processing command 'tyler' with parameters 'batman' from @ryantoo
+2016-06-14 20:31:20,532 DEBUG    errbot.core               Triggering callback_message on Tyler
+2016-06-14 20:31:20,533 DEBUG    errbot.flow               Test if the command tyler is a trigger for an inflight flow ...
+2016-06-14 20:31:20,533 DEBUG    errbot.core               Triggering callback_message on Example
+2016-06-14 20:31:20,533 DEBUG    errbot.flow               None matched.
+2016-06-14 20:31:20,534 DEBUG    errbot.core               Triggering callback_message on ACLS
+2016-06-14 20:31:20,534 DEBUG    errbot.backends.slack     Sending direct message to ryantoo (D1H08KR88)
+2016-06-14 20:31:20,535 DEBUG    errbot.core               Triggering callback_message on Backup
+2016-06-14 20:31:20,536 DEBUG    errbot.backends.slack     Message size: 90
+2016-06-14 20:31:20,536 DEBUG    errbot.core               Triggering callback_message on ChatRoom
+2016-06-14 20:31:20,538 DEBUG    errbot.core               Triggering callback_message on Flows
+2016-06-14 20:31:20,538 DEBUG    errbot.core               Triggering callback_message on Health
+2016-06-14 20:31:20,539 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:31:20,539 DEBUG    errbot.core               Triggering callback_message on Help
+2016-06-14 20:31:20,540 DEBUG    errbot.core               Triggering callback_message on Plugins
+2016-06-14 20:31:20,540 DEBUG    errbot.core               Triggering callback_message on Utils
+2016-06-14 20:31:20,540 DEBUG    errbot.core               Triggering callback_message on VersionChecker
+2016-06-14 20:31:20,871 DEBUG    requests.packages.urllib3.connectionpool "POST /api/chat.postMessage HTTP/1.1" 200 None
+2016-06-14 20:31:20,881 DEBUG    errbot.flow               Test if the command tyler is a trigger for an inflight flow ...
+2016-06-14 20:31:20,881 DEBUG    errbot.flow               None matched.
+2016-06-14 20:31:20,881 DEBUG    errbot.flow               Test if the command tyler is an auto-trigger for any flow ...
+2016-06-14 20:31:21,546 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'D1H08KR88', 'team': 'T1GLUFZAP', 'user_team': 'T1GLUFZAP', 'user': 'U1GUCAK5Z', 'ts': '1465954280.000008', 'bot_id': 'B1H0JFV9P', 'user_profile': {'real_name': '', 'first_name': None, 'avatar_hash': 'ef1c76b22752', 'name': 'ryanbottoo', 'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png'}, 'text': '<https://i.gr-assets.com/images/S/photo.goodreads.com/hostedimages/1420879874i/13285083.jpg>'}
+2016-06-14 20:31:21,546 DEBUG    errbot.backends.slack     building an identifier from <https//i.gr-assets.com/images/S/photo.goodreads.com/hostedimages/1420879874i/13285083.jpg>
+2016-06-14 20:31:21,547 DEBUG    errbot.backends.slack     Tried to build an identifier from '<https://i.gr-assets.com/images/S/photo.goodreads.com/hostedimages/1420879874i/13285083.jpg>' but got exception: Unparseable slack ID, should start with U, B, C, G or D (got `ttps//i.gr-assets.com/images/S/photo.goodreads.com/hostedimages/1420879874i/13285083.jpg`)
+2016-06-14 20:31:21,548 DEBUG    errbot.backends.slack     Saw an event: {'bot_id': 'B1H0JFV9P',
+ 'channel': 'D1H08KR88',
+ 'team': 'T1GLUFZAP',
+ 'text': '<https://i.gr-assets.com/images/S/photo.goodreads.com/hostedimages/1420879874i/13285083.jpg>',
+ 'ts': '1465954280.000008',
+ 'type': 'message',
+ 'user': 'U1GUCAK5Z',
+ 'user_profile': {'avatar_hash': 'ef1c76b22752',
+                  'first_name': None,
+                  'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png',
+                  'name': 'ryanbottoo',
+                  'real_name': ''},
+ 'user_team': 'T1GLUFZAP'}
+2016-06-14 20:31:21,548 DEBUG    errbot.backends.slack     Escaped IDs event text: https://i.gr-assets.com/images/S/photo.goodreads.com/hostedimages/1420879874i/13285083.jpg
+2016-06-14 20:31:21,549 DEBUG    errbot.core               Ignoring message from self
+2016-06-14 20:31:22,552 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'D1H08KR88', 'event_ts': '1465954281.877969', 'ts': '1465954281.000009', 'previous_message': {'type': 'message', 'bot_id': 'B1H0JFV9P', 'text': '<https://i.gr-assets.com/images/S/photo.goodreads.com/hostedimages/1420879874i/13285083.jpg>', 'ts': '1465954280.000008', 'user': 'U1GUCAK5Z'}, 'hidden': True, 'subtype': 'message_changed', 'message': {'type': 'message', 'ts': '1465954280.000008', 'user': 'U1GUCAK5Z', 'bot_id': 'B1H0JFV9P', 'attachments': [{'fallback': '260x194px image', 'image_height': 194, 'id': 1, 'image_width': 260, 'image_url': 'https://i.gr-assets.com/images/S/photo.goodreads.com/hostedimages/1420879874i/13285083.jpg', 'image_bytes': 5362, 'from_url': 'https://i.gr-assets.com/images/S/photo.goodreads.com/hostedimages/1420879874i/13285083.jpg'}], 'text': '<https://i.gr-assets.com/images/S/photo.goodreads.com/hostedimages/1420879874i/13285083.jpg>'}}
+2016-06-14 20:31:22,552 DEBUG    errbot.backends.slack     Ignoring message_changed event with attachments, likely caused by Slack auto-expanding a link
+2016-06-14 20:31:25,563 DEBUG    errbot.backends.slack     No event handler available for user_typing, ignoring this event
+2016-06-14 20:31:26,567 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'D1H08KR88', 'team': 'T1GLUFZAP', 'ts': '1465954285.000010', 'user': 'U1GVD76CU', 'text': '!tyler batman'}
+2016-06-14 20:31:26,568 DEBUG    errbot.backends.slack     Saw an event: {'channel': 'D1H08KR88',
+ 'team': 'T1GLUFZAP',
+ 'text': '!tyler batman',
+ 'ts': '1465954285.000010',
+ 'type': 'message',
+ 'user': 'U1GVD76CU'}
+2016-06-14 20:31:26,569 DEBUG    errbot.backends.slack     Escaped IDs event text: !tyler batman
+2016-06-14 20:31:26,570 DEBUG    errbot.core               *** frm = @ryantoo
+2016-06-14 20:31:26,570 DEBUG    errbot.core               *** username = @ryantoo
+2016-06-14 20:31:26,570 DEBUG    errbot.core               *** text = !tyler batman
+2016-06-14 20:31:26,571 DEBUG    errbot.plugins.ACLS       Check tyler for ACLs.
+2016-06-14 20:31:26,571 INFO     errbot.plugins.ACLS       Matching ACL {} against username @ryantoo for command Tyler:tyler
+2016-06-14 20:31:26,572 INFO     errbot.plugins.ACLS       Check if tyler is admin only command.
+2016-06-14 20:31:26,572 INFO     errbot.core               Processing command 'tyler' with parameters 'batman' from @ryantoo
+2016-06-14 20:31:26,573 DEBUG    errbot.core               Triggering callback_message on Tyler
+2016-06-14 20:31:26,573 DEBUG    errbot.flow               Test if the command tyler is a trigger for an inflight flow ...
+2016-06-14 20:31:26,574 DEBUG    errbot.core               Triggering callback_message on Example
+2016-06-14 20:31:26,574 DEBUG    errbot.flow               None matched.
+2016-06-14 20:31:26,575 DEBUG    errbot.core               Triggering callback_message on ACLS
+2016-06-14 20:31:26,575 DEBUG    errbot.backends.slack     Sending direct message to ryantoo (D1H08KR88)
+2016-06-14 20:31:26,576 DEBUG    errbot.core               Triggering callback_message on Backup
+2016-06-14 20:31:26,577 DEBUG    errbot.backends.slack     Message size: 118
+2016-06-14 20:31:26,577 DEBUG    errbot.core               Triggering callback_message on ChatRoom
+2016-06-14 20:31:26,581 DEBUG    errbot.core               Triggering callback_message on Flows
+2016-06-14 20:31:26,581 DEBUG    errbot.core               Triggering callback_message on Health
+2016-06-14 20:31:26,583 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:31:26,583 DEBUG    errbot.core               Triggering callback_message on Help
+2016-06-14 20:31:26,584 DEBUG    errbot.core               Triggering callback_message on Plugins
+2016-06-14 20:31:26,584 DEBUG    errbot.core               Triggering callback_message on Utils
+2016-06-14 20:31:26,585 DEBUG    errbot.core               Triggering callback_message on VersionChecker
+2016-06-14 20:31:26,891 DEBUG    requests.packages.urllib3.connectionpool "POST /api/chat.postMessage HTTP/1.1" 200 None
+2016-06-14 20:31:26,903 DEBUG    errbot.flow               Test if the command tyler is a trigger for an inflight flow ...
+2016-06-14 20:31:26,903 DEBUG    errbot.flow               None matched.
+2016-06-14 20:31:26,904 DEBUG    errbot.flow               Test if the command tyler is an auto-trigger for any flow ...
+2016-06-14 20:31:27,588 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'D1H08KR88', 'team': 'T1GLUFZAP', 'user_team': 'T1GLUFZAP', 'user': 'U1GUCAK5Z', 'ts': '1465954286.000011', 'bot_id': 'B1H0JFV9P', 'user_profile': {'real_name': '', 'first_name': None, 'avatar_hash': 'ef1c76b22752', 'name': 'ryanbottoo', 'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png'}, 'text': '<http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/embedded_full/public/2014/08/28/2014/07/22/20339.png>'}
+2016-06-14 20:31:27,589 DEBUG    errbot.backends.slack     building an identifier from <http//cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/embedded_full/public/2014/08/28/2014/07/22/20339.png>
+2016-06-14 20:31:27,589 DEBUG    errbot.backends.slack     Tried to build an identifier from '<http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/embedded_full/public/2014/08/28/2014/07/22/20339.png>' but got exception: Unparseable slack ID, should start with U, B, C, G or D (got `ttp//cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/embedded_full/public/2014/08/28/2014/07/22/20339.png`)
+2016-06-14 20:31:27,590 DEBUG    errbot.backends.slack     Saw an event: {'bot_id': 'B1H0JFV9P',
+ 'channel': 'D1H08KR88',
+ 'team': 'T1GLUFZAP',
+ 'text': '<http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/embedded_full/public/2014/08/28/2014/07/22/20339.png>',
+ 'ts': '1465954286.000011',
+ 'type': 'message',
+ 'user': 'U1GUCAK5Z',
+ 'user_profile': {'avatar_hash': 'ef1c76b22752',
+                  'first_name': None,
+                  'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png',
+                  'name': 'ryanbottoo',
+                  'real_name': ''},
+ 'user_team': 'T1GLUFZAP'}
+2016-06-14 20:31:27,590 DEBUG    errbot.backends.slack     Escaped IDs event text: http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/embedded_full/public/2014/08/28/2014/07/22/20339.png
+2016-06-14 20:31:27,591 DEBUG    errbot.core               Ignoring message from self
+2016-06-14 20:31:28,595 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'D1H08KR88', 'event_ts': '1465954287.877986', 'ts': '1465954287.000012', 'previous_message': {'type': 'message', 'bot_id': 'B1H0JFV9P', 'text': '<http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/embedded_full/public/2014/08/28/2014/07/22/20339.png>', 'ts': '1465954286.000011', 'user': 'U1GUCAK5Z'}, 'hidden': True, 'subtype': 'message_changed', 'message': {'type': 'message', 'ts': '1465954286.000011', 'user': 'U1GUCAK5Z', 'bot_id': 'B1H0JFV9P', 'attachments': [{'fallback': '500x429px image', 'image_height': 429, 'id': 1, 'image_width': 500, 'image_url': 'http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/embedded_full/public/2014/08/28/2014/07/22/20339.png', 'image_bytes': 130196, 'from_url': 'http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/embedded_full/public/2014/08/28/2014/07/22/20339.png'}], 'text': '<http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/styles/embedded_full/public/2014/08/28/2014/07/22/20339.png>'}}
+2016-06-14 20:31:28,596 DEBUG    errbot.backends.slack     Ignoring message_changed event with attachments, likely caused by Slack auto-expanding a link
+2016-06-14 20:32:13,711 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-14 20:34:14,114 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-14 20:37:13,597 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-14 20:40:13,097 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-14 20:42:13,453 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-14 20:42:48,576 DEBUG    errbot.backends.slack     No event handler available for channel_joined, ignoring this event
+2016-06-14 20:42:49,578 DEBUG    errbot.backends.slack     Processing slack event: {'user': 'U1GUCAK5Z', 'channel': 'C1GN93FPF', 'team': 'T1GLUFZAP', 'ts': '1465954967.000176', 'type': 'message', 'user_profile': {'real_name': '', 'first_name': None, 'avatar_hash': 'ef1c76b22752', 'name': 'ryanbottoo', 'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png'}, 'subtype': 'channel_join', 'inviter': 'U1GVD76CU', 'text': '<@U1GUCAK5Z|ryanbottoo> has joined the channel'}
+2016-06-14 20:42:49,579 DEBUG    errbot.backends.slack     building an identifier from <@U1GUCAK5Z|ryanbottoo>
+2016-06-14 20:42:49,594 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:42:50,625 DEBUG    requests.packages.urllib3.connectionpool "POST /api/im.open HTTP/1.1" 200 None
+2016-06-14 20:42:50,635 DEBUG    errbot.backends.slack     Tried to build an identifier from '<@U1GUCAK5Z|ryanbottoo>' but got exception: Slack API call to im.open failed: user_not_found
+2016-06-14 20:42:50,636 DEBUG    errbot.backends.slack     Saw an event: {'channel': 'C1GN93FPF',
+ 'inviter': 'U1GVD76CU',
+ 'subtype': 'channel_join',
+ 'team': 'T1GLUFZAP',
+ 'text': '<@U1GUCAK5Z|ryanbottoo> has joined the channel',
+ 'ts': '1465954967.000176',
+ 'type': 'message',
+ 'user': 'U1GUCAK5Z',
+ 'user_profile': {'avatar_hash': 'ef1c76b22752',
+                  'first_name': None,
+                  'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png',
+                  'name': 'ryanbottoo',
+                  'real_name': ''}}
+2016-06-14 20:42:50,636 DEBUG    errbot.backends.slack     Escaped IDs event text: ryanbottoo has joined the channel
+2016-06-14 20:42:50,638 DEBUG    errbot.core               *** frm = #general/ryanbottoo
+2016-06-14 20:42:50,638 DEBUG    errbot.core               *** username = @ryanbottoo
+2016-06-14 20:42:50,639 DEBUG    errbot.core               *** text = ryanbottoo has joined the channel
+2016-06-14 20:42:50,640 DEBUG    errbot.core               Triggering callback_message on Tyler
+2016-06-14 20:42:50,640 DEBUG    errbot.core               Triggering callback_message on Example
+2016-06-14 20:42:50,640 DEBUG    errbot.core               Triggering callback_message on ACLS
+2016-06-14 20:42:50,640 DEBUG    errbot.core               Triggering callback_message on Backup
+2016-06-14 20:42:50,641 DEBUG    errbot.core               Triggering callback_message on ChatRoom
+2016-06-14 20:42:50,641 DEBUG    errbot.core               Triggering callback_message on Flows
+2016-06-14 20:42:50,641 DEBUG    errbot.core               Triggering callback_message on Health
+2016-06-14 20:42:50,641 DEBUG    errbot.core               Triggering callback_message on Help
+2016-06-14 20:42:50,641 DEBUG    errbot.core               Triggering callback_message on Plugins
+2016-06-14 20:42:50,641 DEBUG    errbot.core               Triggering callback_message on Utils
+2016-06-14 20:42:50,641 DEBUG    errbot.core               Triggering callback_message on VersionChecker
+2016-06-14 20:42:51,647 DEBUG    errbot.backends.slack     No event handler available for user_typing, ignoring this event
+2016-06-14 20:42:52,652 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'C1GN93FPF', 'team': 'T1GLUFZAP', 'ts': '1465954971.000177', 'user': 'U1GVD76CU', 'text': '!tyler batman'}
+2016-06-14 20:42:52,653 DEBUG    errbot.backends.slack     Saw an event: {'channel': 'C1GN93FPF',
+ 'team': 'T1GLUFZAP',
+ 'text': '!tyler batman',
+ 'ts': '1465954971.000177',
+ 'type': 'message',
+ 'user': 'U1GVD76CU'}
+2016-06-14 20:42:52,653 DEBUG    errbot.backends.slack     Escaped IDs event text: !tyler batman
+2016-06-14 20:42:52,654 DEBUG    errbot.core               *** frm = #general/ryantoo
+2016-06-14 20:42:52,654 DEBUG    errbot.core               *** username = @ryantoo
+2016-06-14 20:42:52,655 DEBUG    errbot.core               *** text = !tyler batman
+2016-06-14 20:42:52,656 DEBUG    errbot.plugins.ACLS       Check tyler for ACLs.
+2016-06-14 20:42:52,657 INFO     errbot.plugins.ACLS       Matching ACL {} against username @ryantoo for command Tyler:tyler
+2016-06-14 20:42:52,657 INFO     errbot.plugins.ACLS       Check if tyler is admin only command.
+2016-06-14 20:42:52,658 INFO     errbot.core               Processing command 'tyler' with parameters 'batman' from #general/ryantoo
+2016-06-14 20:42:52,658 DEBUG    errbot.core               Triggering callback_message on Tyler
+2016-06-14 20:42:52,659 DEBUG    errbot.core               Triggering callback_message on Example
+2016-06-14 20:42:52,659 DEBUG    errbot.flow               Test if the command tyler is a trigger for an inflight flow ...
+2016-06-14 20:42:52,660 DEBUG    errbot.core               Triggering callback_message on ACLS
+2016-06-14 20:42:52,660 DEBUG    errbot.flow               None matched.
+2016-06-14 20:42:52,660 DEBUG    errbot.core               Triggering callback_message on Backup
+2016-06-14 20:42:52,661 DEBUG    errbot.backends.slack     Sending channel message to general (C1GN93FPF)
+2016-06-14 20:42:52,662 DEBUG    errbot.core               Triggering callback_message on ChatRoom
+2016-06-14 20:42:52,666 DEBUG    errbot.backends.slack     Message size: 110
+2016-06-14 20:42:52,667 DEBUG    errbot.core               Triggering callback_message on Flows
+2016-06-14 20:42:52,669 DEBUG    errbot.core               Triggering callback_message on Health
+2016-06-14 20:42:52,669 DEBUG    errbot.core               Triggering callback_message on Help
+2016-06-14 20:42:52,670 DEBUG    errbot.core               Triggering callback_message on Plugins
+2016-06-14 20:42:52,670 DEBUG    errbot.core               Triggering callback_message on Utils
+2016-06-14 20:42:52,671 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:42:52,671 DEBUG    errbot.core               Triggering callback_message on VersionChecker
+2016-06-14 20:42:53,065 DEBUG    requests.packages.urllib3.connectionpool "POST /api/chat.postMessage HTTP/1.1" 200 None
+2016-06-14 20:42:53,076 DEBUG    errbot.flow               Test if the command tyler is a trigger for an inflight flow ...
+2016-06-14 20:42:53,076 DEBUG    errbot.flow               None matched.
+2016-06-14 20:42:53,076 DEBUG    errbot.flow               Test if the command tyler is an auto-trigger for any flow ...
+2016-06-14 20:42:53,675 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'C1GN93FPF', 'team': 'T1GLUFZAP', 'user_team': 'T1GLUFZAP', 'user': 'U1GUCAK5Z', 'ts': '1465954972.000178', 'bot_id': 'B1H0JFV9P', 'user_profile': {'real_name': '', 'first_name': None, 'avatar_hash': 'ef1c76b22752', 'name': 'ryanbottoo', 'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png'}, 'text': '<https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5DffvpXusrzu0XUWFL0cpf3F1WEX1NVIBMefG2dW07IGVCT6Rn037JQ>'}
+2016-06-14 20:42:53,676 DEBUG    errbot.backends.slack     building an identifier from <https//encrypted-tbn1.gstatic.com/images?q=tbnANd9GcT5DffvpXusrzu0XUWFL0cpf3F1WEX1NVIBMefG2dW07IGVCT6Rn037JQ>
+2016-06-14 20:42:53,676 DEBUG    errbot.backends.slack     Tried to build an identifier from '<https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5DffvpXusrzu0XUWFL0cpf3F1WEX1NVIBMefG2dW07IGVCT6Rn037JQ>' but got exception: Unparseable slack ID, should start with U, B, C, G or D (got `ttps//encrypted-tbn1.gstatic.com/images?q=tbnANd9GcT5DffvpXusrzu0XUWFL0cpf3F1WEX1NVIBMefG2dW07IGVCT6Rn037JQ`)
+2016-06-14 20:42:53,676 DEBUG    errbot.backends.slack     Saw an event: {'bot_id': 'B1H0JFV9P',
+ 'channel': 'C1GN93FPF',
+ 'team': 'T1GLUFZAP',
+ 'text': '<https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5DffvpXusrzu0XUWFL0cpf3F1WEX1NVIBMefG2dW07IGVCT6Rn037JQ>',
+ 'ts': '1465954972.000178',
+ 'type': 'message',
+ 'user': 'U1GUCAK5Z',
+ 'user_profile': {'avatar_hash': 'ef1c76b22752',
+                  'first_name': None,
+                  'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png',
+                  'name': 'ryanbottoo',
+                  'real_name': ''},
+ 'user_team': 'T1GLUFZAP'}
+2016-06-14 20:42:53,677 DEBUG    errbot.backends.slack     Escaped IDs event text: https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5DffvpXusrzu0XUWFL0cpf3F1WEX1NVIBMefG2dW07IGVCT6Rn037JQ
+2016-06-14 20:42:53,677 DEBUG    errbot.core               *** frm = #general/ryanbottoo
+2016-06-14 20:42:53,677 DEBUG    errbot.core               *** username = @ryanbottoo
+2016-06-14 20:42:53,677 DEBUG    errbot.core               *** text = https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5DffvpXusrzu0XUWFL0cpf3F1WEX1NVIBMefG2dW07IGVCT6Rn037JQ
+2016-06-14 20:42:53,677 DEBUG    errbot.core               Triggering callback_message on Tyler
+2016-06-14 20:42:53,678 DEBUG    errbot.core               Triggering callback_message on Example
+2016-06-14 20:42:53,678 DEBUG    errbot.core               Triggering callback_message on ACLS
+2016-06-14 20:42:53,678 DEBUG    errbot.core               Triggering callback_message on Backup
+2016-06-14 20:42:53,678 DEBUG    errbot.core               Triggering callback_message on ChatRoom
+2016-06-14 20:42:53,678 DEBUG    errbot.core               Triggering callback_message on Flows
+2016-06-14 20:42:53,678 DEBUG    errbot.core               Triggering callback_message on Health
+2016-06-14 20:42:53,678 DEBUG    errbot.core               Triggering callback_message on Help
+2016-06-14 20:42:53,678 DEBUG    errbot.core               Triggering callback_message on Plugins
+2016-06-14 20:42:53,678 DEBUG    errbot.core               Triggering callback_message on Utils
+2016-06-14 20:42:53,679 DEBUG    errbot.core               Triggering callback_message on VersionChecker
+2016-06-14 20:42:54,681 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'C1GN93FPF', 'event_ts': '1465954972.880136', 'ts': '1465954972.000179', 'previous_message': {'type': 'message', 'bot_id': 'B1H0JFV9P', 'text': '<https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5DffvpXusrzu0XUWFL0cpf3F1WEX1NVIBMefG2dW07IGVCT6Rn037JQ>', 'ts': '1465954972.000178', 'user': 'U1GUCAK5Z'}, 'hidden': True, 'subtype': 'message_changed', 'message': {'type': 'message', 'ts': '1465954972.000178', 'user': 'U1GUCAK5Z', 'bot_id': 'B1H0JFV9P', 'attachments': [{'fallback': '80x118px image', 'image_height': 118, 'id': 1, 'image_width': 80, 'image_url': 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5DffvpXusrzu0XUWFL0cpf3F1WEX1NVIBMefG2dW07IGVCT6Rn037JQ', 'image_bytes': 2093, 'from_url': 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5DffvpXusrzu0XUWFL0cpf3F1WEX1NVIBMefG2dW07IGVCT6Rn037JQ'}], 'text': '<https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5DffvpXusrzu0XUWFL0cpf3F1WEX1NVIBMefG2dW07IGVCT6Rn037JQ>'}}
+2016-06-14 20:42:54,682 DEBUG    errbot.backends.slack     Ignoring message_changed event with attachments, likely caused by Slack auto-expanding a link
+2016-06-14 20:42:57,692 DEBUG    errbot.backends.slack     No event handler available for user_typing, ignoring this event
+2016-06-14 20:42:59,697 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'C1GN93FPF', 'team': 'T1GLUFZAP', 'ts': '1465954978.000180', 'user': 'U1GVD76CU', 'text': '!tyler batman'}
+2016-06-14 20:42:59,698 DEBUG    errbot.backends.slack     Saw an event: {'channel': 'C1GN93FPF',
+ 'team': 'T1GLUFZAP',
+ 'text': '!tyler batman',
+ 'ts': '1465954978.000180',
+ 'type': 'message',
+ 'user': 'U1GVD76CU'}
+2016-06-14 20:42:59,698 DEBUG    errbot.backends.slack     Escaped IDs event text: !tyler batman
+2016-06-14 20:42:59,699 DEBUG    errbot.core               *** frm = #general/ryantoo
+2016-06-14 20:42:59,699 DEBUG    errbot.core               *** username = @ryantoo
+2016-06-14 20:42:59,700 DEBUG    errbot.core               *** text = !tyler batman
+2016-06-14 20:42:59,700 DEBUG    errbot.plugins.ACLS       Check tyler for ACLs.
+2016-06-14 20:42:59,700 INFO     errbot.plugins.ACLS       Matching ACL {} against username @ryantoo for command Tyler:tyler
+2016-06-14 20:42:59,701 INFO     errbot.plugins.ACLS       Check if tyler is admin only command.
+2016-06-14 20:42:59,701 INFO     errbot.core               Processing command 'tyler' with parameters 'batman' from #general/ryantoo
+2016-06-14 20:42:59,702 DEBUG    errbot.core               Triggering callback_message on Tyler
+2016-06-14 20:42:59,702 DEBUG    errbot.flow               Test if the command tyler is a trigger for an inflight flow ...
+2016-06-14 20:42:59,703 DEBUG    errbot.core               Triggering callback_message on Example
+2016-06-14 20:42:59,703 DEBUG    errbot.flow               None matched.
+2016-06-14 20:42:59,704 DEBUG    errbot.core               Triggering callback_message on ACLS
+2016-06-14 20:42:59,704 DEBUG    errbot.backends.slack     Sending channel message to general (C1GN93FPF)
+2016-06-14 20:42:59,705 DEBUG    errbot.core               Triggering callback_message on Backup
+2016-06-14 20:42:59,706 DEBUG    errbot.backends.slack     Message size: 64
+2016-06-14 20:42:59,706 DEBUG    errbot.core               Triggering callback_message on ChatRoom
+2016-06-14 20:42:59,708 DEBUG    errbot.core               Triggering callback_message on Flows
+2016-06-14 20:42:59,709 DEBUG    errbot.core               Triggering callback_message on Health
+2016-06-14 20:42:59,710 INFO     requests.packages.urllib3.connectionpool Starting new HTTPS connection (1): slack.com
+2016-06-14 20:42:59,710 DEBUG    errbot.core               Triggering callback_message on Help
+2016-06-14 20:42:59,711 DEBUG    errbot.core               Triggering callback_message on Plugins
+2016-06-14 20:42:59,711 DEBUG    errbot.core               Triggering callback_message on Utils
+2016-06-14 20:42:59,711 DEBUG    errbot.core               Triggering callback_message on VersionChecker
+2016-06-14 20:43:00,007 DEBUG    requests.packages.urllib3.connectionpool "POST /api/chat.postMessage HTTP/1.1" 200 None
+2016-06-14 20:43:00,017 DEBUG    errbot.flow               Test if the command tyler is a trigger for an inflight flow ...
+2016-06-14 20:43:00,018 DEBUG    errbot.flow               None matched.
+2016-06-14 20:43:00,018 DEBUG    errbot.flow               Test if the command tyler is an auto-trigger for any flow ...
+2016-06-14 20:43:00,715 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'C1GN93FPF', 'team': 'T1GLUFZAP', 'user_team': 'T1GLUFZAP', 'user': 'U1GUCAK5Z', 'ts': '1465954979.000181', 'bot_id': 'B1H0JFV9P', 'user_profile': {'real_name': '', 'first_name': None, 'avatar_hash': 'ef1c76b22752', 'name': 'ryanbottoo', 'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png'}, 'text': '<http://i3.kym-cdn.com/photos/images/original/000/483/967/273.gif>'}
+2016-06-14 20:43:00,716 DEBUG    errbot.backends.slack     building an identifier from <http//i3.kym-cdn.com/photos/images/original/000/483/967/273.gif>
+2016-06-14 20:43:00,716 DEBUG    errbot.backends.slack     Tried to build an identifier from '<http://i3.kym-cdn.com/photos/images/original/000/483/967/273.gif>' but got exception: Unparseable slack ID, should start with U, B, C, G or D (got `ttp//i3.kym-cdn.com/photos/images/original/000/483/967/273.gif`)
+2016-06-14 20:43:00,717 DEBUG    errbot.backends.slack     Saw an event: {'bot_id': 'B1H0JFV9P',
+ 'channel': 'C1GN93FPF',
+ 'team': 'T1GLUFZAP',
+ 'text': '<http://i3.kym-cdn.com/photos/images/original/000/483/967/273.gif>',
+ 'ts': '1465954979.000181',
+ 'type': 'message',
+ 'user': 'U1GUCAK5Z',
+ 'user_profile': {'avatar_hash': 'ef1c76b22752',
+                  'first_name': None,
+                  'image_72': 'https://avatars.slack-edge.com/2016-06-14/51004742086_ef1c76b2275288cd24e7_72.png',
+                  'name': 'ryanbottoo',
+                  'real_name': ''},
+ 'user_team': 'T1GLUFZAP'}
+2016-06-14 20:43:00,718 DEBUG    errbot.backends.slack     Escaped IDs event text: http://i3.kym-cdn.com/photos/images/original/000/483/967/273.gif
+2016-06-14 20:43:00,718 DEBUG    errbot.core               *** frm = #general/ryanbottoo
+2016-06-14 20:43:00,718 DEBUG    errbot.core               *** username = @ryanbottoo
+2016-06-14 20:43:00,719 DEBUG    errbot.core               *** text = http://i3.kym-cdn.com/photos/images/original/000/483/967/273.gif
+2016-06-14 20:43:00,719 DEBUG    errbot.core               Triggering callback_message on Tyler
+2016-06-14 20:43:00,720 DEBUG    errbot.core               Triggering callback_message on Example
+2016-06-14 20:43:00,720 DEBUG    errbot.core               Triggering callback_message on ACLS
+2016-06-14 20:43:00,720 DEBUG    errbot.core               Triggering callback_message on Backup
+2016-06-14 20:43:00,721 DEBUG    errbot.core               Triggering callback_message on ChatRoom
+2016-06-14 20:43:00,721 DEBUG    errbot.core               Triggering callback_message on Flows
+2016-06-14 20:43:00,721 DEBUG    errbot.core               Triggering callback_message on Health
+2016-06-14 20:43:00,722 DEBUG    errbot.core               Triggering callback_message on Help
+2016-06-14 20:43:00,722 DEBUG    errbot.core               Triggering callback_message on Plugins
+2016-06-14 20:43:00,723 DEBUG    errbot.core               Triggering callback_message on Utils
+2016-06-14 20:43:00,723 DEBUG    errbot.core               Triggering callback_message on VersionChecker
+2016-06-14 20:43:03,730 DEBUG    errbot.backends.slack     Processing slack event: {'type': 'message', 'channel': 'C1GN93FPF', 'event_ts': '1465954982.880153', 'ts': '1465954982.000182', 'previous_message': {'type': 'message', 'bot_id': 'B1H0JFV9P', 'text': '<http://i3.kym-cdn.com/photos/images/original/000/483/967/273.gif>', 'ts': '1465954979.000181', 'user': 'U1GUCAK5Z'}, 'hidden': True, 'subtype': 'message_changed', 'message': {'type': 'message', 'ts': '1465954979.000181', 'user': 'U1GUCAK5Z', 'bot_id': 'B1H0JFV9P', 'attachments': [{'fallback': '480x368px image', 'image_height': 368, 'is_animated': True, 'id': 1, 'image_width': 480, 'image_url': 'http://i3.kym-cdn.com/photos/images/original/000/483/967/273.gif', 'image_bytes': 981285, 'from_url': 'http://i3.kym-cdn.com/photos/images/original/000/483/967/273.gif'}], 'text': '<http://i3.kym-cdn.com/photos/images/original/000/483/967/273.gif>'}}
+2016-06-14 20:43:03,731 DEBUG    errbot.backends.slack     Ignoring message_changed event with attachments, likely caused by Slack auto-expanding a link
+2016-06-14 20:44:12,932 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-14 20:46:13,334 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-14 20:48:13,734 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-14 20:51:13,388 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-14 20:53:13,923 DEBUG    errbot.backends.slack     No event handler available for reconnect_url, ignoring this event
+2016-06-15 08:39:41,828 INFO     errbot.backends.slack     Interrupt received, shutting down..
+2016-06-15 08:39:41,854 DEBUG    errbot.backends.slack     Triggering disconnect callback
+2016-06-15 08:39:41,855 INFO     errbot.core               Disconnect callback, deactivating all the plugins.
+2016-06-15 08:39:41,932 DEBUG    errbot.storage            Closed storage 'Health'
+2016-06-15 08:39:41,952 DEBUG    errbot.storage            Closed storage 'ChatRoom'
+2016-06-15 08:39:41,954 DEBUG    errbot.storage            Closed storage 'Tyler'
+2016-06-15 08:39:41,956 DEBUG    errbot.storage            Closed storage 'Example'
+2016-06-15 08:39:41,960 DEBUG    errbot.storage            Closed storage 'Help'
+2016-06-15 08:39:41,962 DEBUG    errbot.storage            Closed storage 'Plugins'
+2016-06-15 08:39:41,965 DEBUG    errbot.storage            Closed storage 'Backup'
+2016-06-15 08:39:41,966 DEBUG    errbot.botplugin          You still have active pollers at deactivation stage, I cleaned them up for you.
+2016-06-15 08:39:41,970 DEBUG    errbot.storage            Closed storage 'VersionChecker'
+2016-06-15 08:39:41,975 DEBUG    errbot.storage            Closed storage 'ACLS'
+2016-06-15 08:39:41,976 DEBUG    errbot.core               Removing command filter: acls
+2016-06-15 08:39:41,976 DEBUG    errbot.storage            Closed storage 'Utils'
+2016-06-15 08:39:41,980 DEBUG    errbot.storage            Closed storage 'Flows'
+2016-06-15 08:39:41,981 INFO     errbot.backends.base      Trigger shutdown
+2016-06-15 08:39:41,984 DEBUG    errbot.storage            Closed storage 'slack_backend'
+2016-06-15 08:39:41,995 INFO     errbot.plugin_manager     Shutdown.
+2016-06-15 08:39:42,003 DEBUG    errbot.storage            Closed storage 'core'
+2016-06-15 08:39:42,003 INFO     errbot.plugin_manager     Bye.
+2016-06-15 08:39:42,007 DEBUG    errbot.storage            Closed storage 'repomgr'
+2016-06-15 08:39:42,008 INFO     errbot.cli                Process exiting

@@ -10,14 +10,6 @@ class Tyler(BotPlugin):
     """
 
     @botcmd
-    def help(self, msg, args):
-        """
-        This should display a helpful message to anyone requesting help
-        """
-        return "Hey, I can override the help function!"
-
-    @botcmd
-
     def docker(self, msg, args):
 
         if args == "create":
@@ -38,7 +30,7 @@ class Tyler(BotPlugin):
             return "Its big its bad its wood"
 
     @botcmd  # flags a command
-    def tyler(self, msg, args):  # a command callable with !tryme
+    def tyler(self, msg, args):  
         """
         Execute to check if Errbot responds to command.
         Feel free to tweak me to experiment with Errbot.

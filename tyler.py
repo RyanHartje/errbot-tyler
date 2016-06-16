@@ -30,7 +30,7 @@ class Tyler(BotPlugin):
             return "Its big its bad its wood"
 
     @botcmd  # flags a command
-    def tyler(self, msg, args):  
+    def tyler(self, msg, args):
         """
         Execute to check if Errbot responds to command.
         Feel free to tweak me to experiment with Errbot.
@@ -81,18 +81,7 @@ class Tyler(BotPlugin):
                 return batty[randint(0, len(batty) - 1)]
             elif args == 'spiderman':
                 return spidey[randint(0,len(batty)-1)]
-            elif args == 'friendface':
-                """
-                self.send_card(title='Title + Body',
-                    body='text body to put in the card',
-                    thumbnail='https://raw.githubusercontent.com/errbotio/errbot/master/docs/_static/err.png',
-                    image='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png',
-                    link='http://www.google.com',
-                    fields=(('First Key','Value1'), ('Second Key','Value2')),
-                    color='red',
-                    in_reply_to=msg)
-                """
+            elif args == 'snap':
+                return all_pic[randint(0,len(all_pic)-1)]
 
-                yield 'friendface FriendFace FRIENDFACE!'
-                yield "http://vignette1.wikia.nocookie.net/advertcity/images/e/e3/Megacorp_logo_friendFACE.jpg"
         return all_pic[randint(0,len(all_pic)-1)]

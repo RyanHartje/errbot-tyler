@@ -1,3 +1,4 @@
+import subprocess
 from errbot import BotPlugin, botcmd
 from random import randint
 import container
@@ -85,3 +86,20 @@ class Tyler(BotPlugin):
                 return all_pic[randint(0,len(all_pic)-1)]
 
         return all_pic[randint(0,len(all_pic)-1)]
+
+    @botcmd
+    def ansible(self, msg, args):
+        """
+        Runs an ansible command.
+        Since ansible doesn't support Python3, we have to Yolo up some Subprocess calls.
+        :param msg: the body of the incoming message
+        :param args: the content of the arguments to ansible
+        :return: the stdout for the command itself
+        """
+        cmd = "ansible {}".format(args)
+        proc = subprocess.Popen(cmd,
+                                shell=True,
+                                stdout=subprocess.PIPE
+                                )
+        out, _ = proc.communicate()
+        return out
